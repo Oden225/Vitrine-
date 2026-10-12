@@ -112,12 +112,12 @@ const PROJECTS=[
    desc:'Suivi des rendez-vous et relance des patients par WhatsApp, SMS ou appel. Captures avec des patients fictifs.',
    screens:[
     {src:'img/rdvmed-aujourdhui.webp', alt:"RDVmed : écran Aujourd'hui avec un patient en retard (patients fictifs)", hotspots:[
-      {x:.45,y:.25,zoom:2.1,rx:12,ry:-12,label:'Les 14 prochains jours'},
-      {x:.30,y:.44,zoom:2.4,rx:8,ry:12,label:'Retards en premier'},
-      {x:.66,y:.605,zoom:2.5,rx:-8,ry:-10,label:'Relance WhatsApp, SMS, appel'}]},
+      {x:.45,y:.19,zoom:2.1,rx:12,ry:-12,label:'Les 14 prochains jours'},
+      {x:.30,y:.395,zoom:2.4,rx:8,ry:12,label:'Retards en premier'},
+      {x:.66,y:.573,zoom:2.5,rx:-8,ry:-10,label:'Relance WhatsApp, SMS, appel'}]},
     {src:'img/rdvmed-a-venir.webp', alt:'RDVmed : passages programmés (patients fictifs)', hotspots:[
-      {x:.40,y:.23,zoom:2.3,rx:10,ry:-10,label:'Filtres par motif'},
-      {x:.86,y:.30,zoom:2.6,rx:-6,ry:10,label:'Rendez-vous dans 2 jours'}]}]}
+      {x:.40,y:.168,zoom:2.3,rx:10,ry:-10,label:'Filtres par motif'},
+      {x:.86,y:.244,zoom:2.6,rx:-6,ry:10,label:'Rendez-vous dans 2 jours'}]}]}
 ];
 
 function createShowcase(root,projects,opts={}){
