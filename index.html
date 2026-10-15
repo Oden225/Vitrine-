@@ -44,16 +44,10 @@ a:focus-visible,button:focus-visible{outline:2px solid #6CCBEA;outline-offset:3p
 .hv4:hover{color:#6CCBEA !important}
 .hv5:hover{background:#6CCBEA !important;color:#05131A !important}
 </style>
-<link rel="stylesheet" href="css/vitrine.css">
+<link rel="stylesheet" href="css/ui-story.css">
+<style>#story{--us-display:'Newsreader',Georgia,serif;--us-body:"Public Sans",system-ui,sans-serif;--us-mono:'JetBrains Mono',monospace}</style>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
-  <linearGradient id="curG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C9EEF9"/><stop offset=".55" stop-color="#6CCBEA"/><stop offset="1" stop-color="#2B7A94"/></linearGradient>
-  <symbol id="i-prev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></symbol>
-  <symbol id="i-next" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></symbol>
-  <symbol id="i-pause" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></symbol>
-  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></symbol>
-</defs></svg>
 <div style="min-height:100vh;background-color:#0A0E12;background-image:linear-gradient(rgba(108,203,234,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(108,203,234,0.035) 1px,transparent 1px);background-size:32px 32px">
 
   <header style="max-width:1200px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-bottom:1px solid #1E2830">
@@ -190,30 +184,9 @@ a:focus-visible,button:focus-visible{outline:2px solid #6CCBEA;outline-offset:3p
           <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#6CCBEA">Outils</span>
           <h2 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(34px,4.4vw,52px);line-height:1.05">Quatre en service, trois en préparation</h2>
         </div>
-        <p style="margin:0;font-size:16px;line-height:1.6;color:#B4C0CA;max-width:460px">Des outils conçus pour le terrain : connexion instable, impression papier, consultations chargées. Visite guidée ci-dessous, sur les captures des applications.</p>
+        <p style="margin:0;font-size:16px;line-height:1.6;color:#B4C0CA;max-width:460px">Des outils conçus pour le terrain : connexion instable, impression papier, consultations chargées. Chaque outil en action ci-dessous, sur les captures des applications.</p>
       </div>
-      <div class="pshow" id="pshow" aria-roledescription="carrousel" aria-label="Visite guidée des outils">
-        <div class="ps-stage">
-          <i class="ps-orb o1"></i><i class="ps-orb o2"></i><i class="ps-orb o3"></i>
-          <div class="ps-cam"><div class="ps-panel"><img alt=""><i class="sheen"></i><div class="ps-px"></div></div></div>
-          <i class="ps-ripple"></i>
-          <svg class="ps-cursor" viewBox="0 0 34 40" aria-hidden="true"><path d="M3 2l27 15-11.5 3.2L13 34z" fill="url(#curG)" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>
-          <div class="ps-callout" aria-hidden="true"></div>
-        </div>
-        <div class="ps-info">
-          <div class="ps-meta"></div>
-          <h3 class="ps-title" aria-live="polite"></h3>
-          <p class="ps-desc"></p>
-          <ul class="ps-feats" aria-label="Points montrés"></ul>
-          <div class="ps-actions"></div>
-          <div class="ps-nav">
-            <button type="button" class="ps-prev" aria-label="Outil précédent"><svg><use href="#i-prev"/></svg></button>
-            <div class="ps-dots"></div>
-            <button type="button" class="ps-next" aria-label="Outil suivant"><svg><use href="#i-next"/></svg></button>
-            <button type="button" class="ps-pause" aria-label="Mettre en pause"><svg><use href="#i-pause"/></svg></button>
-          </div>
-        </div>
-      </div>
+      <div id="story" role="region" aria-roledescription="film" aria-label="Film des outils"></div>
       <nav aria-label="Fiches des outils" style="display:flex;flex-direction:column;gap:12px;border-top:1px solid #1E2830;padding-top:20px">
         <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#7D8D99">Toutes les fiches</span>
         <ul style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 28px;font-size:15px"><li><a class="hv4" href="#cr-01" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">01</span>NormoDose</a></li><li><a class="hv4" href="#cr-02" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">02</span>VisiteMed</a></li><li><a class="hv4" href="#cr-03" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">03</span>Comptes rendus d'échographie</a></li><li><a class="hv4" href="#cr-04" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">04</span>Résultats de laboratoire</a></li><li><a class="hv4" href="#cr-05" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">05</span>Syndromik</a></li><li><a class="hv4" href="#cr-06" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">06</span>RDVmed</a></li><li><a class="hv4" href="#cr-07" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">07</span>InECG</a></li></ul>
@@ -441,6 +414,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #6CCBEA;outline-offset:3p
   </footer>
 
 </div>
+<script src="js/ui-story.js" defer></script>
 <script src="js/vitrine.js" defer></script>
 </body>
 </html>

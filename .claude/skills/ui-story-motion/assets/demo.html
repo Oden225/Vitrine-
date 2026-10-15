@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UI Story — démo</title>
+<link rel="stylesheet" href="ui-story.css">
+<style>
+  body{margin:0;background:#0A0E12;color:#E8EDF1;font-family:system-ui,sans-serif}
+  main{max-width:1200px;margin:0 auto;padding:48px 16px}
+</style>
+</head>
+<body>
+<main><div id="story"></div></main>
+<script src="ui-story.js"></script>
+<script>
+  // ?video=1 : mode vidéo plein écran, pour scripts/record.mjs
+  if (new URLSearchParams(location.search).has('video')) { document.getElementById('story').classList.add('us-video'); document.querySelector('main').style.padding = '0'; }
+  // capture d'exemple dessinée en SVG : à remplacer par de vraies captures de l'application
+  const screen = 'data:image/svg+xml,' + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="600" height="1200" viewBox="0 0 600 1200">
+    <rect width="600" height="1200" fill="#f4f6f8"/><rect width="600" height="230" fill="#0f6b6b"/>
+    <text x="40" y="120" font-family="sans-serif" font-size="44" font-weight="700" fill="#fff">Mon application</text>
+    <text x="40" y="170" font-family="sans-serif" font-size="26" fill="#cfe9e9">Capture d'exemple</text>
+    <rect x="40" y="290" width="520" height="110" rx="20" fill="#fff" stroke="#d9e0e5"/>
+    <text x="70" y="358" font-family="sans-serif" font-size="34" fill="#0f6b6b" font-weight="700">Valeur saisie : 42</text>
+    <rect x="40" y="440" width="250" height="90" rx="45" fill="#0f6b6b"/><text x="95" y="497" font-family="sans-serif" font-size="30" fill="#fff">Option A</text>
+    <rect x="310" y="440" width="250" height="90" rx="45" fill="#e3e8ec"/><text x="365" y="497" font-family="sans-serif" font-size="30" fill="#55626c">Option B</text>
+    <rect x="40" y="900" width="520" height="140" rx="24" fill="#e3f4f1"/>
+    <text x="70" y="985" font-family="sans-serif" font-size="40" fill="#0f6b6b" font-weight="700">Résultat : 123</text></svg>`);
+  const chapters = [{
+    name: 'MonOutil', tags: ['Démo'], desc: 'Un chapitre de démonstration : remplacez la capture et les points.',
+    cta: '+ Nouveau', fiche: '#',
+    screens: [{ src: screen, alt: "Capture d'exemple", hotspots: [
+      { x: .3, y: .29, zoom: 2.2, rx: 12, ry: -14, label: 'Valeur saisie' },
+      { x: .24, y: .4, zoom: 2.4, rx: 10, ry: 12, label: 'Choix de l’option' },
+      { x: .45, y: .81, zoom: 2.2, rx: -8, ry: -10, label: 'Résultat calculé' }] }],
+    result: { title: 'Calcul', meta: 'Option A · valeur 42', value: 'Résultat : 123' }
+  }];
+  window.story = createUIStory(document.getElementById('story'), chapters, {
+    onCue: (n) => (window.__cues ||= []).push([n, performance.now()])
+  });
+</script>
+</body>
+</html>
