@@ -6,23 +6,25 @@ const ease='cubic-bezier(.2,.7,.2,1)';
 
 /* ---------- 1. Animations du site ---------- */
 function siteMotion(){
-  if(reduce) return;
-  document.querySelectorAll('[data-anim="rise"]').forEach((el,i)=>{
-    el.animate([{opacity:0,transform:'translateY(18px)'},{opacity:1,transform:'none'}],{duration:800,delay:120+i*110,easing:ease,fill:'backwards'});
-  });
-  const ph=document.querySelector('[data-anim="float"]');
-  if(ph){
-    ph.animate([{opacity:0,transform:'translateY(40px) rotate(2deg)'},{opacity:1,transform:'none'}],{duration:1100,delay:300,easing:ease,fill:'backwards'});
-    ph.animate([{transform:'translateY(0)'},{transform:'translateY(-10px)'},{transform:'translateY(0)'}],{duration:5000,delay:1400,iterations:Infinity,easing:'ease-in-out'});
-  }
-  const ecg=document.querySelector('[data-anim="ecg"]');
-  if(ecg){
-    const L=ecg.getTotalLength();
-    ecg.style.strokeDasharray=`${L*.22} ${L}`;
-    ecg.animate([{strokeDashoffset:L*.22},{strokeDashoffset:-L}],{duration:4200,iterations:Infinity,easing:'linear'});
+  // mouvements : seulement si le visiteur ne demande pas à les réduire
+  if(!reduce){
+    document.querySelectorAll('[data-anim="rise"]').forEach((el,i)=>{
+      el.animate([{opacity:0,transform:'translateY(18px)'},{opacity:1,transform:'none'}],{duration:700,delay:120+i*80,easing:ease,fill:'backwards'});
+    });
+    const ph=document.querySelector('[data-anim="float"]');
+    if(ph){
+      ph.animate([{opacity:0,transform:'translateY(40px) rotate(2deg)'},{opacity:1,transform:'none'}],{duration:1100,delay:300,easing:ease,fill:'backwards'});
+      ph.animate([{transform:'translateY(0)'},{transform:'translateY(-10px)'},{transform:'translateY(0)'}],{duration:5000,delay:1400,iterations:Infinity,easing:'ease-in-out'});
+    }
+    const ecg=document.querySelector('[data-anim="ecg"]');
+    if(ecg){
+      const L=ecg.getTotalLength();
+      ecg.style.strokeDasharray=`${L*.22} ${L}`;
+      ecg.animate([{strokeDashoffset:L*.22},{strokeDashoffset:-L}],{duration:4200,iterations:Infinity,easing:'linear'});
+    }
   }
 
-  // apparition au défilement (seulement ce qui est sous la ligne de flottaison au chargement)
+  // apparition au défilement (fondu seul en mouvement réduit ; seulement ce qui est sous la ligne de flottaison au chargement)
   const below=el=>el.getBoundingClientRect().top>innerHeight;
   const targets=el=>el.dataset.anim==='stagger'?[...el.children]:[el];
   const io=new IntersectionObserver(es=>es.forEach(e=>{
@@ -31,7 +33,7 @@ function siteMotion(){
     const stagger=e.target.dataset.anim==='stagger';
     targets(e.target).forEach((t,i)=>{
       t.style.opacity='';
-      t.animate([{opacity:0,transform:`translateY(${stagger?24:32}px)`},{opacity:1,transform:'none'}],{duration:stagger?800:900,delay:stagger?i*110:0,easing:ease,fill:'backwards'});
+      t.animate(reduce?[{opacity:0},{opacity:1}]:[{opacity:0,transform:`translateY(${stagger?14:20}px)`},{opacity:1,transform:'none'}],{duration:reduce?300:(stagger?600:700),delay:stagger?i*(reduce?0:60):0,easing:ease,fill:'backwards'});
     });
   }),{threshold:.12});
   document.querySelectorAll('[data-anim="reveal"],[data-anim="stagger"]').forEach(el=>{

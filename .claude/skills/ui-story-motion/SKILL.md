@@ -86,6 +86,8 @@ Ce que le moteur garantit déjà (à préserver si on le modifie) :
 - boutons précédent / suivant / pastilles / pause de 44 px avec `aria-label`, titre en `aria-live` ;
 - chaque relance incrémente un numéro de lecture : une ancienne boucle s'arrête d'elle-même (`alive()`), pas de films superposés ;
 - `still()` remet la scène dans un état propre (pause, changement de taille, sortie d'écran).
+- boutons qui répondent au doigt (`scale(.97)` sur `:active`, 160 ms) et survols réservés aux souris (`@media (hover: hover) and (pointer: fine)`) ;
+- rien n'apparaît depuis `scale(0)` : le logo part de 0,5 avec un flou, l'anneau de surlignage de 0,85, l'étiquette grandit depuis sa pointe (`transform-origin: 50% 100%`).
 
 Options : `hold` (lecture d'une étiquette, ms), `autoplay`, `headingTag`, `labels` (textes des boutons), `onCue(nom, chapitre)` (temps forts, pour le son). Méthodes renvoyées : `goTo(i)`, `setPaused(bool)`, `chapter`.
 

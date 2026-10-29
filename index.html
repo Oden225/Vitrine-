@@ -36,13 +36,20 @@ html{scroll-behavior:smooth;color-scheme:dark}
 body{margin:0;background:#0A0E12;color:#E8EDF1;font-family:"Public Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%;height:auto}
 a{color:#6CCBEA}
-a:hover{color:#A6E1F4}
 a:focus-visible,button:focus-visible{outline:2px solid #6CCBEA;outline-offset:3px}
+:root{--ease-out:cubic-bezier(.23,1,.32,1)}
+a,button{-webkit-tap-highlight-color:transparent}
+a,.hv1,.hv4{transition:color 150ms ease}
+.hv2,.hv3,.hv5{transition:transform 160ms var(--ease-out),background-color 150ms ease,color 150ms ease}
+.hv2:active,.hv3:active,.hv5:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){
+a:hover{color:#A6E1F4}
 .hv1:hover{color:#E8EDF1 !important}
 .hv2:hover{background:#94DBF1 !important}
 .hv3:hover{background:#121A21 !important}
 .hv4:hover{color:#6CCBEA !important}
 .hv5:hover{background:#6CCBEA !important;color:#05131A !important}
+}
 </style>
 <link rel="stylesheet" href="css/ui-story.css">
 <style>#story{--us-display:'Newsreader',Georgia,serif;--us-body:"Public Sans",system-ui,sans-serif;--us-mono:'JetBrains Mono',monospace}</style>

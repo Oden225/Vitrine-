@@ -176,8 +176,8 @@ function createUIStory(root, chapters, opts) {
     // éclair + apparition du logo avec dépassement
     cue('pop');
     A(glow, [{ opacity: .9, transform: 'translate(-50%,-50%) scale(.15)' }, { opacity: 0, transform: 'translate(-50%,-50%) scale(1.7)' }], { duration: 700 });
-    A(mark, [{ opacity: 0, transform: 'scale(0) rotate(-24deg)' }, { opacity: 1, transform: 'scale(1.2) rotate(5deg)', offset: .6 },
-             { opacity: 1, transform: 'scale(1) rotate(0)' }], { duration: 620 });
+    A(mark, [{ opacity: 0, transform: 'scale(.5) rotate(-24deg)', filter: 'blur(4px)' }, { opacity: 1, transform: 'scale(1.2) rotate(5deg)', filter: 'blur(0px)', offset: .6 },
+             { opacity: 1, transform: 'scale(1) rotate(0)', filter: 'blur(0px)' }], { duration: 620 });
     await sleep(520); if (!alive()) return;
     // le nom s'écrit lettre à lettre, avec une lueur qui retombe
     A(name, [{ width: '0px' }, { width: nameW + 'px' }], { duration: 120 + letters.length * 45, easing: EASE.out });
@@ -250,7 +250,7 @@ function createUIStory(root, chapters, opts) {
         if (!alive()) return;
         cue('click');
         await click();
-        A(hl, [{ opacity: 0, transform: 'translate(-50%,-50%) scale(.6)' }, { opacity: 1, transform: 'translate(-50%,-50%) scale(1)' }], { duration: 340, easing: EASE.back });
+        A(hl, [{ opacity: 0, transform: 'translate(-50%,-50%) scale(.85)' }, { opacity: 1, transform: 'translate(-50%,-50%) scale(1)' }], { duration: 300, easing: EASE.back });
         callout.getAnimations().forEach(a => a.cancel());
         callout.textContent = h.label; featOn(h.label);
         Object.assign(callout.style, { left: cx + 'px', top: (cy - H * .06) + 'px' });
