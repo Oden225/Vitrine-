@@ -31,30 +31,32 @@
 @font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 500;font-display:swap;src:url(fonts/jetbrains-mono-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 500;font-display:swap;src:url(fonts/jetbrains-mono-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;color-scheme:dark}
+html{scroll-behavior:smooth;color-scheme:dark;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;background:#0A0E12;color:#E8EDF1;font-family:"Public Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%;height:auto}
 a{color:#6CCBEA}
-a:hover{color:#A6E1F4}
 a:focus-visible,button:focus-visible{outline:2px solid #6CCBEA;outline-offset:3px}
+:root{--ease-out:cubic-bezier(.23,1,.32,1)}
+a,button{touch-action:manipulation}
+.hv2,.hv3,.hv5{user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+a,.hv1,.hv4{transition:color 150ms ease}
+.hv2,.hv3,.hv5{transition:transform 160ms var(--ease-out),background-color 150ms ease,color 150ms ease}
+.hv2:active,.hv3:active,.hv5:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){
+a:hover{color:#A6E1F4}
 .hv1:hover{color:#E8EDF1 !important}
 .hv2:hover{background:#94DBF1 !important}
 .hv3:hover{background:#121A21 !important}
 .hv4:hover{color:#6CCBEA !important}
 .hv5:hover{background:#6CCBEA !important;color:#05131A !important}
+}
 </style>
-<link rel="stylesheet" href="css/vitrine.css">
+<link rel="stylesheet" href="css/ui-story.css">
+<style>#story{--us-display:'Newsreader',Georgia,serif;--us-body:"Public Sans",system-ui,sans-serif;--us-mono:'JetBrains Mono',monospace}</style>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
-  <linearGradient id="curG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C9EEF9"/><stop offset=".55" stop-color="#6CCBEA"/><stop offset="1" stop-color="#2B7A94"/></linearGradient>
-  <symbol id="i-prev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></symbol>
-  <symbol id="i-next" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></symbol>
-  <symbol id="i-pause" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></symbol>
-  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></symbol>
-</defs></svg>
-<div style="min-height:100vh;background-color:#0A0E12;background-image:linear-gradient(rgba(108,203,234,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(108,203,234,0.035) 1px,transparent 1px);background-size:32px 32px">
+<div style="min-height:100vh;min-height:100svh;background-color:#0A0E12;background-image:linear-gradient(rgba(108,203,234,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(108,203,234,0.035) 1px,transparent 1px);background-size:32px 32px">
 
   <header style="max-width:1200px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-bottom:1px solid #1E2830">
     <a href="#" style="text-decoration:none;color:#E8EDF1;font-family:'Newsreader',Georgia,serif;font-size:22px">Dr Romaric Balet</a>
@@ -190,30 +192,9 @@ a:focus-visible,button:focus-visible{outline:2px solid #6CCBEA;outline-offset:3p
           <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#6CCBEA">Outils</span>
           <h2 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(34px,4.4vw,52px);line-height:1.05">Quatre en service, trois en préparation</h2>
         </div>
-        <p style="margin:0;font-size:16px;line-height:1.6;color:#B4C0CA;max-width:460px">Des outils conçus pour le terrain : connexion instable, impression papier, consultations chargées. Visite guidée ci-dessous, sur les captures des applications.</p>
+        <p style="margin:0;font-size:16px;line-height:1.6;color:#B4C0CA;max-width:460px">Des outils conçus pour le terrain : connexion instable, impression papier, consultations chargées. Chaque outil en action ci-dessous, sur les captures des applications.</p>
       </div>
-      <div class="pshow" id="pshow" aria-roledescription="carrousel" aria-label="Visite guidée des outils">
-        <div class="ps-stage">
-          <i class="ps-orb o1"></i><i class="ps-orb o2"></i><i class="ps-orb o3"></i>
-          <div class="ps-cam"><div class="ps-panel"><img alt=""><i class="sheen"></i><div class="ps-px"></div></div></div>
-          <i class="ps-ripple"></i>
-          <svg class="ps-cursor" viewBox="0 0 34 40" aria-hidden="true"><path d="M3 2l27 15-11.5 3.2L13 34z" fill="url(#curG)" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>
-          <div class="ps-callout" aria-hidden="true"></div>
-        </div>
-        <div class="ps-info">
-          <div class="ps-meta"></div>
-          <h3 class="ps-title" aria-live="polite"></h3>
-          <p class="ps-desc"></p>
-          <ul class="ps-feats" aria-label="Points montrés"></ul>
-          <div class="ps-actions"></div>
-          <div class="ps-nav">
-            <button type="button" class="ps-prev" aria-label="Outil précédent"><svg><use href="#i-prev"/></svg></button>
-            <div class="ps-dots"></div>
-            <button type="button" class="ps-next" aria-label="Outil suivant"><svg><use href="#i-next"/></svg></button>
-            <button type="button" class="ps-pause" aria-label="Mettre en pause"><svg><use href="#i-pause"/></svg></button>
-          </div>
-        </div>
-      </div>
+      <div id="story" role="region" aria-roledescription="film" aria-label="Film des outils"></div>
       <nav aria-label="Fiches des outils" style="display:flex;flex-direction:column;gap:12px;border-top:1px solid #1E2830;padding-top:20px">
         <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#7D8D99">Toutes les fiches</span>
         <ul style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 28px;font-size:15px"><li><a class="hv4" href="#cr-01" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">01</span>NormoDose</a></li><li><a class="hv4" href="#cr-02" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">02</span>VisiteMed</a></li><li><a class="hv4" href="#cr-03" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">03</span>Comptes rendus d'échographie</a></li><li><a class="hv4" href="#cr-04" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">04</span>Résultats de laboratoire</a></li><li><a class="hv4" href="#cr-05" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">05</span>Syndromik</a></li><li><a class="hv4" href="#cr-06" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">06</span>RDVmed</a></li><li><a class="hv4" href="#cr-07" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">07</span>InECG</a></li></ul>
@@ -441,6 +422,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #6CCBEA;outline-offset:3p
   </footer>
 
 </div>
+<script src="js/ui-story.js" defer></script>
 <script src="js/vitrine.js" defer></script>
 </body>
 </html>
