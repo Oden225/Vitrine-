@@ -5,97 +5,144 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dr Romaric Balet | Médecin généraliste, santé numérique</title>
 <meta name="description" content="Médecin généraliste à San Pedro (Côte d'Ivoire), je conçois des outils numériques pour les cliniques et les soignants : posologie, comptes rendus d'échographie, résultats de laboratoire, suivi des patients.">
-<meta name="theme-color" content="#0A0E12">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#0F3A66">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#174A7E">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:title" content="Dr Romaric Balet | Médecin généraliste, santé numérique">
 <meta property="og:description" content="Médecin généraliste à San Pedro (Côte d'Ivoire), je conçois des outils numériques pour les cliniques et les soignants : posologie, comptes rendus d'échographie, résultats de laboratoire, suivi des patients.">
 <meta property="og:url" content="https://oden225.github.io/Vitrine-/">
-<meta property="og:image" content="https://oden225.github.io/Vitrine-/img/apercu-v2.jpg">
+<meta property="og:image" content="https://oden225.github.io/Vitrine-/img/apercu-v3.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Dr Romaric Balet, médecin généraliste et santé numérique : soigner, puis outiller ceux qui soignent.">
 <meta property="og:site_name" content="Dr Romaric Balet">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://oden225.github.io/Vitrine-/img/apercu-v2.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230A0E12'/%3E%3Cpath d='M18 52h16l5-6 5 6h6l5-24 6 40 5-16h16' stroke='%236CCBEA' stroke-width='6' fill='none' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
-<link rel="preload" href="fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/public-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<meta name="twitter:image" content="https://oden225.github.io/Vitrine-/img/apercu-v3.jpg">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Outfit-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="img/normodose-calcul.webp" as="image">
 <style>
-@font-face{font-family:'Newsreader';font-style:normal;font-weight:400 500;font-display:swap;src:url(fonts/newsreader-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Newsreader';font-style:normal;font-weight:400 500;font-display:swap;src:url(fonts/newsreader-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
-@font-face{font-family:'Public Sans';font-style:normal;font-weight:400 600;font-display:swap;src:url(fonts/public-sans-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Public Sans';font-style:normal;font-weight:400 600;font-display:swap;src:url(fonts/public-sans-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
-@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 500;font-display:swap;src:url(fonts/jetbrains-mono-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 500;font-display:swap;src:url(fonts/jetbrains-mono-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+/* Système de design Odenlabs : polices, jetons (thèmes clair et sombre), composants de base */
+@font-face{font-family:Outfit;font-weight:600;font-display:swap;src:url(fonts/Outfit-SemiBold.woff2) format('woff2')}
+@font-face{font-family:Outfit;font-weight:700;font-display:swap;src:url(fonts/Outfit-Bold.woff2) format('woff2')}
+@font-face{font-family:Inter;font-weight:400;font-display:swap;src:url(fonts/Inter-Regular.woff2) format('woff2')}
+@font-face{font-family:Inter;font-weight:500;font-display:swap;src:url(fonts/Inter-Medium.woff2) format('woff2')}
+@font-face{font-family:Inter;font-weight:600;font-display:swap;src:url(fonts/Inter-SemiBold.woff2) format('woff2')}
+@font-face{font-family:Inter;font-weight:700;font-display:swap;src:url(fonts/Inter-Bold.woff2) format('woff2')}
+:root{
+  --bleu-profond:#0F3A66; --lin:#EFE8DE; --bleu-clair:#8FBDEB; --bleu-egee:#1664B0; --abricot:#E8A27C; --menthe:#7CC4B0;
+  --surface:#F7F3EC; --surface-raised:#FFFFFF; --surface-sunken:#EFE8DE;
+  --panel:#0F3A66; --on-panel:#EFE8DE; --panel-accent:#8FBDEB;
+  --line:#DCD3C4; --line-strong:#7B8797; --ink:#0F3A66; --ink-muted:#4A5D75;
+  --accent:#1664B0; --on-accent:#FFFFFF; --accent-soft:#E1EDFA; --accent-hover:#0F3A66;
+  --logo-ring:#0F3A66; --logo-dot:#1664B0; --logo-oden:#0F3A66; --logo-labs:#1664B0;
+  --device:#0B1E33;
+  --font-display:Outfit,Inter,system-ui,sans-serif; --font-sans:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px; --space-6:24px; --space-8:32px; --space-12:48px;
+  --radius-sm:6px; --radius-md:10px; --radius-lg:16px; --radius-full:9999px; --control-md:48px;
+  --shadow-sm:0 1px 2px #0f3a660f,0 1px 3px #0f3a661a; --shadow-lg:0 4px 8px #0f3a6614,0 12px 28px -2px #0f3a6629;
+  --focus-ring:0 0 0 2px #f7f3ec,0 0 0 4px #1664b0;
+  --ease-out:cubic-bezier(.23,1,.32,1)
+}
+@media (prefers-color-scheme:dark){:root{
+  --surface:#0B1E33; --surface-raised:#12304F; --surface-sunken:#081627;
+  --panel:#174A7E; --line:#2A4B70; --line-strong:#7393B8; --ink:#EFE8DE; --ink-muted:#A9BCD3;
+  --accent:#8FBDEB; --on-accent:#0F3A66; --accent-soft:#133A5F; --accent-hover:#EFE8DE;
+  --logo-ring:#8FBDEB; --logo-dot:#EFE8DE; --logo-oden:#EFE8DE; --logo-labs:#8FBDEB;
+  --device:#081627;
+  --shadow-sm:0 1px 3px #000000b3; --shadow-lg:0 12px 28px -2px #000000cc;
+  --focus-ring:0 0 0 2px #0b1e33,0 0 0 4px #8fbdeb
+}}
+/* panneau de marque (en-tête et accueil) : les jetons de texte et d'accent passent en version « sur panneau » */
+.brand-panel{
+  --surface:var(--panel); --ink:var(--on-panel); --ink-muted:#B9C9DD; --accent:var(--panel-accent); --on-accent:#0F3A66; --accent-hover:#EFE8DE;
+  --accent-soft:rgba(239,232,222,.1); --line:rgba(239,232,222,.16); --line-strong:rgba(239,232,222,.55); --surface-raised:rgba(239,232,222,.08);
+  --logo-ring:var(--panel-accent); --logo-labs:var(--panel-accent); --logo-dot:var(--on-panel); --logo-oden:var(--on-panel);
+  --device:#081627; --focus-ring:0 0 0 2px var(--panel),0 0 0 4px #8fbdeb;
+  background-color:var(--panel); color:var(--on-panel);
+  background-image:linear-gradient(rgba(239,232,222,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(239,232,222,.045) 1px,transparent 1px);background-size:32px 32px
+}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;color-scheme:dark;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%}
+html{scroll-behavior:smooth;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:#0A0E12;color:#E8EDF1;font-family:"Public Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--surface);color:var(--ink);font-family:var(--font-sans);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%;height:auto}
-a{color:#6CCBEA}
-a:focus-visible,button:focus-visible{outline:2px solid #6CCBEA;outline-offset:3px}
-:root{--ease-out:cubic-bezier(.23,1,.32,1)}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid transparent;box-shadow:var(--focus-ring);border-radius:var(--radius-sm)}
+.od-logo-ring{fill:var(--logo-ring)} .od-logo-dot{fill:var(--logo-dot)} .od-logo-oden{fill:var(--logo-oden)} .od-logo-labs{fill:var(--logo-labs)}
 a,button{touch-action:manipulation}
 .hv2,.hv3,.hv5{user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
 a,.hv1,.hv4{transition:color 150ms ease}
-.hv2,.hv3,.hv5{transition:transform 160ms var(--ease-out),background-color 150ms ease,color 150ms ease}
+.hv2,.hv3,.hv5{transition:transform 160ms var(--ease-out),background-color 150ms ease,color 150ms ease,border-color 150ms ease}
 .hv2:active,.hv3:active,.hv5:active{transform:scale(.97)}
 @media (hover:hover) and (pointer:fine){
-a:hover{color:#A6E1F4}
-.hv1:hover{color:#E8EDF1 !important}
-.hv2:hover{background:#94DBF1 !important}
-.hv3:hover{background:#121A21 !important}
-.hv4:hover{color:#6CCBEA !important}
-.hv5:hover{background:#6CCBEA !important;color:#05131A !important}
+a:hover{color:var(--ink)}
+.hv1:hover{color:var(--ink) !important}
+.hv2:hover{background:var(--accent-hover) !important}
+.hv3:hover{background:var(--accent-soft) !important}
+.hv4:hover{color:var(--accent) !important}
+.hv5:hover{background:var(--accent) !important;color:var(--on-accent) !important}
 }
 </style>
 <link rel="stylesheet" href="css/ui-story.css">
-<style>#story{--us-display:'Newsreader',Georgia,serif;--us-body:"Public Sans",system-ui,sans-serif;--us-mono:'JetBrains Mono',monospace}</style>
+<style>
+/* film des outils : panneau d'infos aux couleurs de la page, scène en bleu nuit de marque */
+#story{--us-display:var(--font-display);--us-body:var(--font-sans);--us-mono:var(--font-sans);--us-display-weight:600;
+  --us-text:var(--ink);--us-muted:var(--ink-muted);--us-soft:var(--ink-muted);--us-line:var(--line-strong);--us-surface:var(--surface-raised);
+  --us-accent:var(--accent);--us-accent-ink:var(--on-accent);--us-accent-hover:var(--accent-hover);--us-chip:var(--accent-soft);
+  --us-radius:var(--radius-md);--us-stage-radius:var(--radius-lg)}
+#story .us-stage{--us-bg:#0B1E33;--us-stage-a:#174A7E;--us-line:rgba(239,232,222,.15);--us-text:#EFE8DE;
+  --us-accent:#8FBDEB;--us-accent-ink:#0F3A66;--us-glow:rgba(143,189,235,.5);--us-card:#FFFFFF;--us-card-text:#0F3A66;--us-card-muted:#4A5D75;
+  --us-track:#DCD3C4;--us-fill:#1664B0;--us-hl:#1664B0;--us-hl-soft:rgba(22,100,176,.12)}
+#story .us-meta span{letter-spacing:.08em;font-weight:600;font-size:12px}
+</style>
 </head>
 <body>
-<div style="min-height:100vh;min-height:100svh;background-color:#0A0E12;background-image:linear-gradient(rgba(108,203,234,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(108,203,234,0.035) 1px,transparent 1px);background-size:32px 32px">
+<div style="min-height:100vh;min-height:100svh;background:var(--surface)">
 
-  <header style="max-width:1200px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-bottom:1px solid #1E2830">
-    <a href="#" style="text-decoration:none;color:#E8EDF1;font-family:'Newsreader',Georgia,serif;font-size:22px">Dr Romaric Balet</a>
-    <nav style="display:flex;gap:28px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase">
-      <a href="#offre" style="color:#97A6B2;text-decoration:none" class="hv1">Offre</a>
-      <a href="#projets" style="color:#97A6B2;text-decoration:none" class="hv1">Outils</a>
-      <a href="#parcours" style="color:#97A6B2;text-decoration:none" class="hv1">Parcours</a>
-      <a href="#contact" style="color:#97A6B2;text-decoration:none" class="hv1">Contact</a>
+<div class="brand-panel">
+  <header style="max-width:1200px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--line)">
+    <a href="#" style="text-decoration:none;color:var(--ink);font-family:var(--font-display);font-size:20px;font-weight:600">Dr Romaric Balet</a>
+    <nav style="display:flex;gap:28px;font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;font-weight:600">
+      <a href="#offre" style="color:var(--ink-muted);text-decoration:none" class="hv1">Offre</a>
+      <a href="#projets" style="color:var(--ink-muted);text-decoration:none" class="hv1">Outils</a>
+      <a href="#parcours" style="color:var(--ink-muted);text-decoration:none" class="hv1">Parcours</a>
+      <a href="#contact" style="color:var(--ink-muted);text-decoration:none" class="hv1">Contact</a>
     </nav>
   </header>
 
   <section style="max-width:1200px;margin:0 auto;padding:80px 24px 96px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr));gap:64px;align-items:center">
     <div style="display:flex;flex-direction:column;gap:32px">
-      <span data-anim="rise" style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#6CCBEA">Médecin généraliste — Santé numérique</span>
-      <h1 data-anim="rise" style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(44px,6.4vw,80px);line-height:1;letter-spacing:-0.02em;text-wrap:balance">Soigner, puis <em style="color:#6CCBEA">outiller</em> ceux qui soignent.</h1>
-      <p data-anim="rise" style="margin:0;font-size:18px;line-height:1.7;color:#B4C0CA;max-width:540px;text-wrap:pretty">J'exerce en clinique à San Pedro, en Côte d'Ivoire. À partir des besoins que je rencontre en consultation, au laboratoire et en imagerie, je conçois des outils simples qui font gagner du temps aux soignants et sécurisent la prise en charge.</p>
+      <span data-anim="rise" style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);font-weight:600">Médecin généraliste — Santé numérique</span>
+      <h1 data-anim="rise" style="margin:0;font-family:var(--font-display);font-weight:600;font-size:clamp(36px,5vw,56px);line-height:1;letter-spacing:-0.01em;text-wrap:balance">Soigner, puis <em style="color:var(--accent);font-style:normal">outiller</em> ceux qui soignent.</h1>
+      <p data-anim="rise" style="margin:0;font-size:18px;line-height:1.7;color:var(--ink-muted);max-width:540px;text-wrap:pretty">J'exerce en clinique à San Pedro, en Côte d'Ivoire. À partir des besoins que je rencontre en consultation, au laboratoire et en imagerie, je conçois des outils simples qui font gagner du temps aux soignants et sécurisent la prise en charge.</p>
       <div data-anim="rise" style="display:flex;gap:12px;flex-wrap:wrap">
-        <a href="https://wa.me/2250767087494?text=Bonjour%20Docteur%2C%20je%20souhaite%20une%20d%C3%A9monstration%20de%20vos%20outils." target="_blank" rel="noopener" style="padding:14px 24px;border-radius:999px;background:#6CCBEA;color:#05131A;font-weight:600;font-size:15px;text-decoration:none" class="hv2">Demander une démonstration</a>
-        <a href="#projets" style="padding:14px 24px;border-radius:999px;border:1px solid #2A3741;color:#E8EDF1;font-weight:500;font-size:15px;text-decoration:none" class="hv3">Voir les outils</a>
+        <a href="https://wa.me/2250767087494?text=Bonjour%20Docteur%2C%20je%20souhaite%20une%20d%C3%A9monstration%20de%20vos%20outils." target="_blank" rel="noopener" style="padding:14px 24px;border-radius:var(--radius-md);background:var(--accent);color:var(--on-accent);font-weight:600;font-size:15px;text-decoration:none;display:inline-flex;align-items:center;min-height:var(--control-md)" class="hv2">Demander une démonstration</a>
+        <a href="#projets" style="padding:14px 24px;border-radius:var(--radius-md);border:1px solid var(--line-strong);color:var(--ink);font-weight:500;font-size:15px;text-decoration:none;display:inline-flex;align-items:center;min-height:var(--control-md)" class="hv3">Voir les outils</a>
       </div>
     </div>
 
     <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:28px;align-items:center">
-      <div data-anim="rise" style="display:flex;flex-direction:column;gap:0;border-top:1px solid #2A3741">
-        <div style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2A3741">
-          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#7D8D99">Outil</span>
-          <span style="font-family:'Newsreader',Georgia,serif;font-size:24px">NormoDose</span>
+      <div data-anim="rise" style="display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line)">
+        <div style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid var(--line)">
+          <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Outil</span>
+          <span style="font-family:var(--font-display);font-size:20px;font-weight:600">NormoDose</span>
         </div>
-        <div style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2A3741">
-          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#7D8D99">Poids saisi</span>
-          <span data-count="25" data-suffix=" kg" style="font-family:'JetBrains Mono',monospace;font-size:22px;color:#6CCBEA">25 kg</span>
+        <div style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid var(--line)">
+          <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Poids saisi</span>
+          <span data-count="25" data-suffix=" kg" style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:22px;color:var(--accent);font-weight:600">25 kg</span>
         </div>
-        <div style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid #2A3741">
-          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#7D8D99">Amoxicilline IV</span>
-          <span data-count="835" data-suffix=" mg / inj." style="font-family:'JetBrains Mono',monospace;font-size:22px;color:#6CCBEA">835 mg / inj.</span>
+        <div style="display:flex;flex-direction:column;gap:6px;padding:16px 0;border-bottom:1px solid var(--line)">
+          <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Amoxicilline IV</span>
+          <span data-count="835" data-suffix=" mg / inj." style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:22px;color:var(--accent);font-weight:600">835 mg / inj.</span>
         </div>
-        <span style="padding-top:14px;font-size:13px;line-height:1.5;color:#7D8D99">Calcul affiché à l'écran, à vérifier avec la concentration du flacon.</span>
+        <span style="padding-top:14px;font-size:13px;line-height:1.5;color:var(--ink-muted)">Calcul affiché à l'écran, à vérifier avec la concentration du flacon.</span>
       </div>
-      <div data-anim="float" style="padding:7px;border-radius:36px;background:#000;border:1px solid #2A3741;box-shadow:0 40px 90px rgba(0,0,0,0.6),0 0 0 8px rgba(108,203,234,0.05)">
+      <div data-anim="float" style="padding:7px;border-radius:36px;background:var(--device);border:1px solid var(--line);box-shadow:0 40px 90px -20px rgba(4,18,34,.6),0 0 0 8px rgba(143,189,235,.12)">
         <img width="600" height="1216" src="img/normodose-calcul.webp" alt="NormoDose, calcul de dose chez l'enfant de 25 kg" style="border-radius:29px;width:100%">
       </div>
     </div>
@@ -103,101 +150,103 @@ a:hover{color:#A6E1F4}
 
   <div aria-hidden="true" style="max-width:1200px;margin:-48px auto 0;padding:0 24px 24px;position:relative">
     <svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="display:block;width:100%;height:60px;overflow:visible">
-      <path d="M0 30 H0" stroke="#1E2830" stroke-width="1" fill="none"></path>
-      <path data-anim="ecg" d="M0 30 h110 l10 -4 l10 4 h20 l6 6 l8 -40 l8 50 l6 -16 h18 q12 -12 24 0 h80 h110 l10 -4 l10 4 h20 l6 6 l8 -40 l8 50 l6 -16 h18 q12 -12 24 0 h80 h110 l10 -4 l10 4 h20 l6 6 l8 -40 l8 50 l6 -16 h18 q12 -12 24 0 h80 h110 l10 -4 l10 4 h20 l6 6 l8 -40 l8 50 l6 -16 h18 q12 -12 24 0 h80 " stroke="#6CCBEA" stroke-width="1.6" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+      <path d="M0 30 H0" style="stroke:var(--line)" stroke-width="1" fill="none"></path>
+      <path data-anim="ecg" d="M0 30 h110 l10 -4 l10 4 h20 l6 6 l8 -40 l8 50 l6 -16 h18 q12 -12 24 0 h80 h110 l10 -4 l10 4 h20 l6 6 l8 -40 l8 50 l6 -16 h18 q12 -12 24 0 h80 h110 l10 -4 l10 4 h20 l6 6 l8 -40 l8 50 l6 -16 h18 q12 -12 24 0 h80 h110 l10 -4 l10 4 h20 l6 6 l8 -40 l8 50 l6 -16 h18 q12 -12 24 0 h80 " style="stroke:var(--accent)" stroke-width="1.6" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
     </svg>
   </div>
 
+</div>
+
   <section style="max-width:1200px;margin:0 auto;padding:40px 24px 88px;display:flex;flex-direction:column;gap:40px">
-    <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#6CCBEA">Résultats en clinique</span>
+    <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);font-weight:600">Résultats en clinique</span>
     <div data-anim="stagger" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:0 32px">
-        <div style="display:flex;flex-direction:column;gap:10px;padding:24px 24px 24px 0;border-top:1px solid #2A3741">
-          <span style="font-family:'Newsreader',Georgia,serif;font-size:clamp(48px,6vw,72px);line-height:1;color:#E8EDF1">≈ <span data-count="300">300</span><span style="font-size:0.45em;color:#6CCBEA;margin-left:6px">échos</span></span>
-          <span style="font-size:15px;line-height:1.5;color:#B4C0CA;max-width:260px">comptes rendus d'échographie imprimés</span>
+        <div style="display:flex;flex-direction:column;gap:10px;padding:24px 24px 24px 0;border-top:1px solid var(--line)">
+          <span style="font-family:var(--font-sans);font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-0.01em;font-size:clamp(40px,5vw,56px);line-height:1;color:var(--ink)">≈ <span data-count="300">300</span><span style="font-size:0.45em;color:var(--accent);margin-left:6px">échos</span></span>
+          <span style="font-size:15px;line-height:1.5;color:var(--ink-muted);max-width:260px">comptes rendus d'échographie imprimés</span>
         </div>
-        <div style="display:flex;flex-direction:column;gap:10px;padding:24px 24px 24px 0;border-top:1px solid #2A3741">
-          <span style="font-family:'Newsreader',Georgia,serif;font-size:clamp(48px,6vw,72px);line-height:1;color:#E8EDF1"><span data-count="5">5</span><span style="font-size:0.45em;color:#6CCBEA;margin-left:6px">min</span></span>
-          <span style="font-size:15px;line-height:1.5;color:#B4C0CA;max-width:260px">gagnées à chaque saisie de compte rendu</span>
+        <div style="display:flex;flex-direction:column;gap:10px;padding:24px 24px 24px 0;border-top:1px solid var(--line)">
+          <span style="font-family:var(--font-sans);font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-0.01em;font-size:clamp(40px,5vw,56px);line-height:1;color:var(--ink)"><span data-count="5">5</span><span style="font-size:0.45em;color:var(--accent);margin-left:6px">min</span></span>
+          <span style="font-size:15px;line-height:1.5;color:var(--ink-muted);max-width:260px">gagnées à chaque saisie de compte rendu</span>
         </div>
-        <div style="display:flex;flex-direction:column;gap:10px;padding:24px 24px 24px 0;border-top:1px solid #2A3741">
-          <span style="font-family:'Newsreader',Georgia,serif;font-size:clamp(48px,6vw,72px);line-height:1;color:#E8EDF1">≈ <span data-count="200">200</span><span style="font-size:0.45em;color:#6CCBEA;margin-left:6px">feuilles</span></span>
-          <span style="font-size:15px;line-height:1.5;color:#B4C0CA;max-width:260px">résultats de biologie imprimés</span>
+        <div style="display:flex;flex-direction:column;gap:10px;padding:24px 24px 24px 0;border-top:1px solid var(--line)">
+          <span style="font-family:var(--font-sans);font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-0.01em;font-size:clamp(40px,5vw,56px);line-height:1;color:var(--ink)">≈ <span data-count="200">200</span><span style="font-size:0.45em;color:var(--accent);margin-left:6px">feuilles</span></span>
+          <span style="font-size:15px;line-height:1.5;color:var(--ink-muted);max-width:260px">résultats de biologie imprimés</span>
         </div>
     </div>
     <blockquote style="margin:0;display:flex;flex-direction:column;gap:14px;max-width:760px">
-      <p style="margin:0;font-family:'Newsreader',Georgia,serif;font-style:italic;font-size:clamp(28px,3.4vw,40px);line-height:1.2;color:#E8EDF1">« Ça fait gagner un temps fou. »</p>
-      <cite style="font-style:normal;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#7D8D99">Kouakou Leonnie, secrétaire de la clinique</cite>
+      <p style="margin:0;font-family:var(--font-display);font-style:normal;font-size:clamp(24px,2.8vw,32px);line-height:1.25;color:var(--ink);font-weight:600">« Ça fait gagner un temps fou. »</p>
+      <cite style="font-style:normal;font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Kouakou Leonnie, secrétaire de la clinique</cite>
     </blockquote>
   </section>
 
-  <section id="offre" style="background:#0E141A;border-top:1px solid #1E2830;border-bottom:1px solid #1E2830">
+  <section id="offre" style="background:var(--surface-sunken);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
     <div style="max-width:1200px;margin:0 auto;padding:96px 24px;display:flex;flex-direction:column;gap:56px">
       <div data-anim="reveal" style="display:flex;flex-direction:column;gap:12px;max-width:720px">
-        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#6CCBEA">Ce que je propose</span>
-        <h2 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(34px,4.4vw,52px);line-height:1.05;text-wrap:balance">Des outils pensés par un médecin, installés dans votre structure.</h2>
+        <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);font-weight:600">Ce que je propose</span>
+        <h2 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:clamp(28px,3.4vw,40px);line-height:1.05;text-wrap:balance">Des outils pensés par un médecin, installés dans votre structure.</h2>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:48px">
         <div style="display:flex;flex-direction:column;gap:18px">
-          <span style="font-family:'Newsreader',Georgia,serif;font-size:26px">Pour les cliniques</span>
+          <span style="font-family:var(--font-display);font-size:20px;font-weight:600">Pour les cliniques</span>
           <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px">
-            <li style="display:flex;gap:12px;font-size:16px;line-height:1.55;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;color:#6CCBEA;flex:none">+</span><span>Plus d'examens par jour : le compte rendu est prêt à imprimer dès la fin de la saisie.</span></li>
-            <li style="display:flex;gap:12px;font-size:16px;line-height:1.55;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;color:#6CCBEA;flex:none">+</span><span>Moins de patients perdus de vue, donc des consultations de suivi récupérées.</span></li>
-            <li style="display:flex;gap:12px;font-size:16px;line-height:1.55;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;color:#6CCBEA;flex:none">+</span><span>Des documents homogènes, à l'en-tête de la clinique, quel que soit le praticien.</span></li>
-            <li style="display:flex;gap:12px;font-size:16px;line-height:1.55;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;color:#6CCBEA;flex:none">+</span><span>Une équipe formée sur place, sans matériel coûteux.</span></li>
+            <li style="display:flex;gap:12px;font-size:16px;line-height:1.55;color:var(--ink)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;color:var(--accent);flex:none;font-weight:600">+</span><span>Plus d'examens par jour : le compte rendu est prêt à imprimer dès la fin de la saisie.</span></li>
+            <li style="display:flex;gap:12px;font-size:16px;line-height:1.55;color:var(--ink)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;color:var(--accent);flex:none;font-weight:600">+</span><span>Moins de patients perdus de vue, donc des consultations de suivi récupérées.</span></li>
+            <li style="display:flex;gap:12px;font-size:16px;line-height:1.55;color:var(--ink)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;color:var(--accent);flex:none;font-weight:600">+</span><span>Des documents homogènes, à l'en-tête de la clinique, quel que soit le praticien.</span></li>
+            <li style="display:flex;gap:12px;font-size:16px;line-height:1.55;color:var(--ink)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;color:var(--accent);flex:none;font-weight:600">+</span><span>Une équipe formée sur place, sans matériel coûteux.</span></li>
           </ul>
         </div>
         <div style="display:flex;flex-direction:column;gap:18px">
-          <span style="font-family:'Newsreader',Georgia,serif;font-size:26px">Pour les médecins et soignants</span>
+          <span style="font-family:var(--font-display);font-size:20px;font-weight:600">Pour les médecins et soignants</span>
           <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px">
-            <li style="display:flex;gap:12px;font-size:16px;line-height:1.55;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;color:#6CCBEA;flex:none">+</span><span>Moins de temps à rédiger, plus de temps pour le patient.</span></li>
-            <li style="display:flex;gap:12px;font-size:16px;line-height:1.55;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;color:#6CCBEA;flex:none">+</span><span>Des calculs de dose vérifiés selon le poids et le terrain.</span></li>
-            <li style="display:flex;gap:12px;font-size:16px;line-height:1.55;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;color:#6CCBEA;flex:none">+</span><span>Des outils qui marchent sur un téléphone ordinaire, même sans réseau.</span></li>
-            <li style="display:flex;gap:12px;font-size:16px;line-height:1.55;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;color:#6CCBEA;flex:none">+</span><span>Conçus par un confrère qui exerce dans les mêmes conditions que vous.</span></li>
+            <li style="display:flex;gap:12px;font-size:16px;line-height:1.55;color:var(--ink)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;color:var(--accent);flex:none;font-weight:600">+</span><span>Moins de temps à rédiger, plus de temps pour le patient.</span></li>
+            <li style="display:flex;gap:12px;font-size:16px;line-height:1.55;color:var(--ink)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;color:var(--accent);flex:none;font-weight:600">+</span><span>Des calculs de dose vérifiés selon le poids et le terrain.</span></li>
+            <li style="display:flex;gap:12px;font-size:16px;line-height:1.55;color:var(--ink)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;color:var(--accent);flex:none;font-weight:600">+</span><span>Des outils qui marchent sur un téléphone ordinaire, même sans réseau.</span></li>
+            <li style="display:flex;gap:12px;font-size:16px;line-height:1.55;color:var(--ink)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;color:var(--accent);flex:none;font-weight:600">+</span><span>Conçus par un confrère qui exerce dans les mêmes conditions que vous.</span></li>
           </ul>
         </div>
       </div>
       <div data-anim="stagger" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px">
-        <div style="display:flex;flex-direction:column;gap:10px;padding:22px;border:1px solid #2A3741;border-radius:14px;background:#0E141A">
-          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#6CCBEA">01</span>
-          <span style="font-family:'Newsreader',Georgia,serif;font-size:24px;line-height:1.15">Démonstration</span>
-          <span style="font-size:15px;line-height:1.55;color:#B4C0CA">Je vous présente les outils sur place ou en visio, avec vos propres cas.</span>
+        <div style="display:flex;flex-direction:column;gap:10px;padding:var(--space-4) var(--space-4) var(--space-6);border-radius:var(--radius-lg);background:var(--surface-raised);box-shadow:var(--shadow-sm)">
+          <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--accent);font-weight:600">01</span>
+          <span style="font-family:var(--font-display);font-size:20px;line-height:1.15;font-weight:600">Démonstration</span>
+          <span style="font-size:15px;line-height:1.55;color:var(--ink-muted)">Je vous présente les outils sur place ou en visio, avec vos propres cas.</span>
         </div>
-        <div style="display:flex;flex-direction:column;gap:10px;padding:22px;border:1px solid #2A3741;border-radius:14px;background:#0E141A">
-          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#6CCBEA">02</span>
-          <span style="font-family:'Newsreader',Georgia,serif;font-size:24px;line-height:1.15">Mise en place</span>
-          <span style="font-size:15px;line-height:1.55;color:#B4C0CA">Adaptation à votre structure : en-tête, examens, modèles de comptes rendus.</span>
+        <div style="display:flex;flex-direction:column;gap:10px;padding:var(--space-4) var(--space-4) var(--space-6);border-radius:var(--radius-lg);background:var(--surface-raised);box-shadow:var(--shadow-sm)">
+          <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--accent);font-weight:600">02</span>
+          <span style="font-family:var(--font-display);font-size:20px;line-height:1.15;font-weight:600">Mise en place</span>
+          <span style="font-size:15px;line-height:1.55;color:var(--ink-muted)">Adaptation à votre structure : en-tête, examens, modèles de comptes rendus.</span>
         </div>
-        <div style="display:flex;flex-direction:column;gap:10px;padding:22px;border:1px solid #2A3741;border-radius:14px;background:#0E141A">
-          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#6CCBEA">03</span>
-          <span style="font-family:'Newsreader',Georgia,serif;font-size:24px;line-height:1.15">Sur mesure</span>
-          <span style="font-size:15px;line-height:1.55;color:#B4C0CA">Un besoin précis dans votre service ? On conçoit l'outil ensemble.</span>
+        <div style="display:flex;flex-direction:column;gap:10px;padding:var(--space-4) var(--space-4) var(--space-6);border-radius:var(--radius-lg);background:var(--surface-raised);box-shadow:var(--shadow-sm)">
+          <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--accent);font-weight:600">03</span>
+          <span style="font-family:var(--font-display);font-size:20px;line-height:1.15;font-weight:600">Sur mesure</span>
+          <span style="font-size:15px;line-height:1.55;color:var(--ink-muted)">Un besoin précis dans votre service ? On conçoit l'outil ensemble.</span>
         </div>
       </div>
-      <div style="display:flex;flex-direction:column;gap:18px;padding-top:32px;border-top:1px solid #2A3741">
-        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#7D8D99">Données patients</span>
+      <div style="display:flex;flex-direction:column;gap:18px;padding-top:32px;border-top:1px solid var(--line)">
+        <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Données patients</span>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:20px 32px">
-          <p style="margin:0;font-size:15px;line-height:1.6;color:#D3DCE3">Les données restent dans la structure : sur ses appareils, ou sur l'espace qu'elle choisit.</p>
-          <p style="margin:0;font-size:15px;line-height:1.6;color:#D3DCE3">Les outils fonctionnent hors connexion : pas de dépendance au réseau.</p>
-          <p style="margin:0;font-size:15px;line-height:1.6;color:#D3DCE3">Aucune donnée n'est revendue ni partagée avec des tiers.</p>
-          <p style="margin:0;font-size:15px;line-height:1.6;color:#D3DCE3">Le contenu médical est aligné sur les protocoles nationaux ivoiriens.</p>
+          <p style="margin:0;font-size:15px;line-height:1.6;color:var(--ink)">Les données restent dans la structure : sur ses appareils, ou sur l'espace qu'elle choisit.</p>
+          <p style="margin:0;font-size:15px;line-height:1.6;color:var(--ink)">Les outils fonctionnent hors connexion : pas de dépendance au réseau.</p>
+          <p style="margin:0;font-size:15px;line-height:1.6;color:var(--ink)">Aucune donnée n'est revendue ni partagée avec des tiers.</p>
+          <p style="margin:0;font-size:15px;line-height:1.6;color:var(--ink)">Le contenu médical est aligné sur les protocoles nationaux ivoiriens.</p>
         </div>
       </div>
     </div>
   </section>
 
   <section id="projets" style="max-width:1200px;margin:0 auto;padding:0 24px">
-    <div style="border-top:1px solid #2A3741;padding:56px 0 24px;display:flex;flex-direction:column;gap:40px">
+    <div style="border-top:1px solid var(--line);padding:56px 0 24px;display:flex;flex-direction:column;gap:40px">
       <div data-anim="reveal" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px 56px;align-items:end">
         <div style="display:flex;flex-direction:column;gap:12px">
-          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#6CCBEA">Outils</span>
-          <h2 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(34px,4.4vw,52px);line-height:1.05">Quatre en service, trois en préparation</h2>
+          <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);font-weight:600">Outils</span>
+          <h2 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:clamp(28px,3.4vw,40px);line-height:1.05">Quatre en service, trois en préparation</h2>
         </div>
-        <p style="margin:0;font-size:16px;line-height:1.6;color:#B4C0CA;max-width:460px">Des outils conçus pour le terrain : connexion instable, impression papier, consultations chargées. Chaque outil en action ci-dessous, sur les captures des applications.</p>
+        <p style="margin:0;font-size:16px;line-height:1.6;color:var(--ink-muted);max-width:460px">Des outils conçus pour le terrain : connexion instable, impression papier, consultations chargées. Chaque outil en action ci-dessous, sur les captures des applications.</p>
       </div>
       <div id="story" role="region" aria-roledescription="film" aria-label="Film des outils"></div>
-      <nav aria-label="Fiches des outils" style="display:flex;flex-direction:column;gap:12px;border-top:1px solid #1E2830;padding-top:20px">
-        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#7D8D99">Toutes les fiches</span>
-        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 28px;font-size:15px"><li><a class="hv4" href="#cr-01" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">01</span>NormoDose</a></li><li><a class="hv4" href="#cr-02" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">02</span>VisiteMed</a></li><li><a class="hv4" href="#cr-03" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">03</span>Comptes rendus d'échographie</a></li><li><a class="hv4" href="#cr-04" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">04</span>Résultats de laboratoire</a></li><li><a class="hv4" href="#cr-05" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">05</span>Syndromik</a></li><li><a class="hv4" href="#cr-06" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">06</span>RDVmed</a></li><li><a class="hv4" href="#cr-07" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:#D3DCE3"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">07</span>InECG</a></li></ul>
+      <nav aria-label="Fiches des outils" style="display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--line);padding-top:20px">
+        <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Toutes les fiches</span>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 28px;font-size:15px"><li><a class="hv4" href="#cr-01" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:var(--ink)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);font-weight:600">01</span>NormoDose</a></li><li><a class="hv4" href="#cr-02" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:var(--ink)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);font-weight:600">02</span>VisiteMed</a></li><li><a class="hv4" href="#cr-03" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:var(--ink)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);font-weight:600">03</span>Comptes rendus d'échographie</a></li><li><a class="hv4" href="#cr-04" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:var(--ink)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);font-weight:600">04</span>Résultats de laboratoire</a></li><li><a class="hv4" href="#cr-05" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:var(--ink)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);font-weight:600">05</span>Syndromik</a></li><li><a class="hv4" href="#cr-06" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:var(--ink)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);font-weight:600">06</span>RDVmed</a></li><li><a class="hv4" href="#cr-07" style="display:flex;gap:10px;align-items:baseline;text-decoration:none;color:var(--ink)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);font-weight:600">07</span>InECG</a></li></ul>
       </nav>
     </div>
   </section>
@@ -206,199 +255,199 @@ a:hover{color:#A6E1F4}
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:56px;align-items:start">
       <div style="display:flex;flex-direction:column;gap:32px">
         <div style="display:flex;flex-direction:column;gap:14px">
-          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;color:#6CCBEA">CR 01 — WEB ET ANDROID</span>
-          <h3 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(40px,5vw,60px);line-height:1">NormoDose</h3>
-          <p style="margin:0;font-size:17px;color:#97A6B2">Aide au calcul de posologie</p>
+          <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.1em;color:var(--accent);font-weight:600">CR 01 — WEB ET ANDROID</span>
+          <h3 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:clamp(28px,3.4vw,40px);line-height:1">NormoDose</h3>
+          <p style="margin:0;font-size:17px;color:var(--ink-muted)">Aide au calcul de posologie</p>
         </div>
         <div style="display:flex;flex-direction:column;gap:22px">
-          <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#7D8D99">Indication</span><p style="margin:0;font-size:17px;line-height:1.65;color:#D3DCE3">Calcul des doses chez l'enfant selon le poids et chez l'adulte, avec adaptation aux situations particulières.</p></div>
-          <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#7D8D99">Technique</span><p style="margin:0;font-size:17px;line-height:1.65;color:#D3DCE3">Grossesse, sujet âgé, insuffisance rénale ou hépatique, diabète, asthme. Médicaments d'urgence accessibles en permanence.</p></div>
-          <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#7D8D99">Conclusion</span><p style="margin:0;font-size:17px;line-height:1.65;color:#D3DCE3">Historique et favoris, utilisable hors connexion.</p></div>
+          <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Indication</span><p style="margin:0;font-size:17px;line-height:1.65;color:var(--ink)">Calcul des doses chez l'enfant selon le poids et chez l'adulte, avec adaptation aux situations particulières.</p></div>
+          <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Technique</span><p style="margin:0;font-size:17px;line-height:1.65;color:var(--ink)">Grossesse, sujet âgé, insuffisance rénale ou hépatique, diabète, asthme. Médicaments d'urgence accessibles en permanence.</p></div>
+          <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Conclusion</span><p style="margin:0;font-size:17px;line-height:1.65;color:var(--ink)">Historique et favoris, utilisable hors connexion.</p></div>
         </div>
-        <a href="https://oden225.github.io/Pediadose/" target="_blank" rel="noopener" style="align-self:flex-start;padding:12px 20px;border-radius:999px;border:1px solid #6CCBEA;color:#6CCBEA;font-weight:600;font-size:14px;text-decoration:none" class="hv5">Ouvrir NormoDose →</a>
+        <a href="https://oden225.github.io/Pediadose/" target="_blank" rel="noopener" style="align-self:flex-start;padding:12px 20px;border-radius:var(--radius-md);border:1px solid var(--accent);color:var(--accent);font-weight:600;font-size:14px;text-decoration:none;display:inline-flex;align-items:center;min-height:var(--control-md)" class="hv5">Ouvrir NormoDose →</a>
       </div>
       <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start">
-        <div style="padding:4px;border-radius:24px;background:#000;border:1px solid #2A3741"><img loading="lazy" decoding="async" width="600" height="1216" src="img/normodose-calcul.webp" alt="Écran Calcul" style="border-radius:20px;width:100%"></div>
-        <div style="padding:4px;border-radius:24px;background:#000;border:1px solid #2A3741;margin-top:48px"><img loading="lazy" decoding="async" width="600" height="1212" src="img/normodose-patients.webp" alt="Écran Patients vus" style="border-radius:20px;width:100%"></div>
-        <div style="padding:4px;border-radius:24px;background:#000;border:1px solid #2A3741;margin-top:96px"><img loading="lazy" decoding="async" width="600" height="1215" src="img/normodose-profil.webp" alt="Écran Profil" style="border-radius:20px;width:100%"></div>
+        <div style="padding:4px;border-radius:24px;background:var(--device);border:1px solid var(--line)"><img loading="lazy" decoding="async" width="600" height="1216" src="img/normodose-calcul.webp" alt="Écran Calcul" style="border-radius:20px;width:100%"></div>
+        <div style="padding:4px;border-radius:24px;background:var(--device);border:1px solid var(--line);margin-top:48px"><img loading="lazy" decoding="async" width="600" height="1212" src="img/normodose-patients.webp" alt="Écran Patients vus" style="border-radius:20px;width:100%"></div>
+        <div style="padding:4px;border-radius:24px;background:var(--device);border:1px solid var(--line);margin-top:96px"><img loading="lazy" decoding="async" width="600" height="1215" src="img/normodose-profil.webp" alt="Écran Profil" style="border-radius:20px;width:100%"></div>
       </div>
     </div>
   </article>
 
-  <article data-anim="reveal" id="cr-02" style="max-width:1200px;margin:0 auto;padding:72px 24px;border-top:1px solid #1E2830">
+  <article data-anim="reveal" id="cr-02" style="max-width:1200px;margin:0 auto;padding:72px 24px;border-top:1px solid var(--line)">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:56px;align-items:start">
       <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start">
-        <div style="padding:4px;border-radius:24px;background:#000;border:1px solid #2A3741;margin-top:96px"><img loading="lazy" decoding="async" width="600" height="1138" src="img/visitemed-accueil.webp" alt="Accueil VisiteMed" style="border-radius:20px;width:100%"></div>
-        <div style="padding:4px;border-radius:24px;background:#000;border:1px solid #2A3741;margin-top:48px"><img loading="lazy" decoding="async" width="600" height="1153" src="img/visitemed-produit.webp" alt="Nouveau produit" style="border-radius:20px;width:100%"></div>
-        <div style="padding:4px;border-radius:24px;background:#000;border:1px solid #2A3741"><img loading="lazy" decoding="async" width="600" height="1133" src="img/visitemed-donnees.webp" alt="Mes données" style="border-radius:20px;width:100%"></div>
+        <div style="padding:4px;border-radius:24px;background:var(--device);border:1px solid var(--line);margin-top:96px"><img loading="lazy" decoding="async" width="600" height="1138" src="img/visitemed-accueil.webp" alt="Accueil VisiteMed" style="border-radius:20px;width:100%"></div>
+        <div style="padding:4px;border-radius:24px;background:var(--device);border:1px solid var(--line);margin-top:48px"><img loading="lazy" decoding="async" width="600" height="1153" src="img/visitemed-produit.webp" alt="Nouveau produit" style="border-radius:20px;width:100%"></div>
+        <div style="padding:4px;border-radius:24px;background:var(--device);border:1px solid var(--line)"><img loading="lazy" decoding="async" width="600" height="1133" src="img/visitemed-donnees.webp" alt="Mes données" style="border-radius:20px;width:100%"></div>
       </div>
       <div style="display:flex;flex-direction:column;gap:32px">
         <div style="display:flex;flex-direction:column;gap:14px">
-          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;color:#6CCBEA">CR 02 — APPLICATION WEB</span>
-          <h3 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(40px,5vw,60px);line-height:1">VisiteMed</h3>
-          <p style="margin:0;font-size:17px;color:#97A6B2">Répertoire des délégués médicaux</p>
+          <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.1em;color:var(--accent);font-weight:600">CR 02 — APPLICATION WEB</span>
+          <h3 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:clamp(28px,3.4vw,40px);line-height:1">VisiteMed</h3>
+          <p style="margin:0;font-size:17px;color:var(--ink-muted)">Répertoire des délégués médicaux</p>
         </div>
         <div style="display:flex;flex-direction:column;gap:22px">
-          <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#7D8D99">Indication</span><p style="margin:0;font-size:17px;line-height:1.65;color:#D3DCE3">Garder une trace claire des produits présentés par les délégués et prescrire en toute indépendance.</p></div>
-          <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#7D8D99">Technique</span><p style="margin:0;font-size:17px;line-height:1.65;color:#D3DCE3">Fiche produit : DCI, classe, présentations, prix, pharmacies. Mode visite pour saisir plusieurs produits d'un même passage.</p></div>
-          <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#7D8D99">Conclusion</span><p style="margin:0;font-size:17px;line-height:1.65;color:#D3DCE3">Bilan par laboratoire et comparateur par priorité et par prix.</p></div>
+          <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Indication</span><p style="margin:0;font-size:17px;line-height:1.65;color:var(--ink)">Garder une trace claire des produits présentés par les délégués et prescrire en toute indépendance.</p></div>
+          <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Technique</span><p style="margin:0;font-size:17px;line-height:1.65;color:var(--ink)">Fiche produit : DCI, classe, présentations, prix, pharmacies. Mode visite pour saisir plusieurs produits d'un même passage.</p></div>
+          <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Conclusion</span><p style="margin:0;font-size:17px;line-height:1.65;color:var(--ink)">Bilan par laboratoire et comparateur par priorité et par prix.</p></div>
         </div>
-        <a href="https://oden225.github.io/visitmed/" target="_blank" rel="noopener" style="align-self:flex-start;padding:12px 20px;border-radius:999px;border:1px solid #6CCBEA;color:#6CCBEA;font-weight:600;font-size:14px;text-decoration:none" class="hv5">Ouvrir VisiteMed →</a>
+        <a href="https://oden225.github.io/visitmed/" target="_blank" rel="noopener" style="align-self:flex-start;padding:12px 20px;border-radius:var(--radius-md);border:1px solid var(--accent);color:var(--accent);font-weight:600;font-size:14px;text-decoration:none;display:inline-flex;align-items:center;min-height:var(--control-md)" class="hv5">Ouvrir VisiteMed →</a>
       </div>
     </div>
   </article>
 
-  <article data-anim="reveal" id="cr-03" style="max-width:1200px;margin:0 auto;padding:72px 24px;border-top:1px solid #1E2830;display:flex;flex-direction:column;gap:40px">
+  <article data-anim="reveal" id="cr-03" style="max-width:1200px;margin:0 auto;padding:72px 24px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:40px">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:32px 56px;align-items:end">
       <div style="display:flex;flex-direction:column;gap:14px">
-        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;color:#6CCBEA">CR 03 — EN SERVICE EN CLINIQUE</span>
-        <h3 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(36px,4.6vw,56px);line-height:1.02">Comptes rendus d'échographie</h3>
+        <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.1em;color:var(--accent);font-weight:600">CR 03 — EN SERVICE EN CLINIQUE</span>
+        <h3 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:clamp(28px,3.4vw,40px);line-height:1.02">Comptes rendus d'échographie</h3>
       </div>
-      <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#7D8D99">Technique</span><p style="margin:0;font-size:17px;line-height:1.65;color:#D3DCE3;text-wrap:pretty">Le médecin choisit le type d'examen et saisit ses mesures. Le compte rendu se met en page automatiquement, prêt à imprimer, et les champs oubliés sont signalés avant l'impression.</p></div>
+      <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Technique</span><p style="margin:0;font-size:17px;line-height:1.65;color:var(--ink);text-wrap:pretty">Le médecin choisit le type d'examen et saisit ses mesures. Le compte rendu se met en page automatiquement, prêt à imprimer, et les champs oubliés sont signalés avant l'impression.</p></div>
     </div>
     <figure style="margin:0;display:flex;flex-direction:column;gap:12px">
-      <div style="padding:10px;border-radius:16px;background:#121A21;border:1px solid #2A3741"><img src="img/echographie.webp" alt="Écran de saisie d'une échographie pelvienne avec le compte rendu généré à droite" width="1440" height="900" loading="lazy" style="width:100%;border-radius:8px"></div>
-      <figcaption style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7D8D99">Saisie à gauche, document patient à droite.</figcaption>
+      <div style="padding:10px;border-radius:var(--radius-lg);background:var(--surface-raised);border:1px solid var(--line)"><img src="img/echographie.webp" alt="Écran de saisie d'une échographie pelvienne avec le compte rendu généré à droite" width="1440" height="900" loading="lazy" style="width:100%;border-radius:var(--radius-md)"></div>
+      <figcaption style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);font-weight:600">Saisie à gauche, document patient à droite.</figcaption>
     </figure>
-    <div style="display:flex;flex-wrap:wrap;gap:12px 32px;font-family:'JetBrains Mono',monospace;font-size:14px;color:#6CCBEA"><span>≈ 300 comptes rendus imprimés</span><span>5 min gagnées par saisie</span></div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));border-top:1px solid #2A3741">
-      <div style="padding:16px 16px 16px 0;display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">M1</span><span style="font-size:15px">Pelvienne</span></div>
-      <div style="padding:16px 16px 16px 0;display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">M2</span><span style="font-size:15px">Obstétricale 1<sup>er</sup> trimestre</span></div>
-      <div style="padding:16px 16px 16px 0;display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">M3</span><span style="font-size:15px">Obstétricale 2<sup>e</sup>/3<sup>e</sup> trimestre</span></div>
-      <div style="padding:16px 16px 16px 0;display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">M4</span><span style="font-size:15px">Abdominale</span></div>
-      <div style="padding:16px 0;display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">M5</span><span style="font-size:15px">Pelvienne avec régions inguinales</span></div>
+    <div style="display:flex;flex-wrap:wrap;gap:12px 32px;font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:14px;color:var(--accent);font-weight:600"><span>≈ 300 comptes rendus imprimés</span><span>5 min gagnées par saisie</span></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));border-top:1px solid var(--line)">
+      <div style="padding:16px 16px 16px 0;display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);font-weight:600">M1</span><span style="font-size:15px">Pelvienne</span></div>
+      <div style="padding:16px 16px 16px 0;display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);font-weight:600">M2</span><span style="font-size:15px">Obstétricale 1<sup>er</sup> trimestre</span></div>
+      <div style="padding:16px 16px 16px 0;display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);font-weight:600">M3</span><span style="font-size:15px">Obstétricale 2<sup>e</sup>/3<sup>e</sup> trimestre</span></div>
+      <div style="padding:16px 16px 16px 0;display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);font-weight:600">M4</span><span style="font-size:15px">Abdominale</span></div>
+      <div style="padding:16px 0;display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);font-weight:600">M5</span><span style="font-size:15px">Pelvienne avec régions inguinales</span></div>
     </div>
   </article>
 
-  <article data-anim="reveal" id="cr-04" style="max-width:1200px;margin:0 auto;padding:72px 24px;border-top:1px solid #1E2830;display:flex;flex-direction:column;gap:40px">
+  <article data-anim="reveal" id="cr-04" style="max-width:1200px;margin:0 auto;padding:72px 24px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:40px">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:32px 56px;align-items:end">
       <div style="display:flex;flex-direction:column;gap:14px">
-        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;color:#6CCBEA">CR 04 — EN SERVICE EN CLINIQUE</span>
-        <h3 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(36px,4.6vw,56px);line-height:1.02">Résultats de laboratoire</h3>
+        <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.1em;color:var(--accent);font-weight:600">CR 04 — EN SERVICE EN CLINIQUE</span>
+        <h3 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:clamp(28px,3.4vw,40px);line-height:1.02">Résultats de laboratoire</h3>
       </div>
-      <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#7D8D99">Technique</span><p style="margin:0;font-size:17px;line-height:1.65;color:#D3DCE3;text-wrap:pretty">Le biologiste coche les examens demandés et la feuille de résultats se compose, avec les valeurs de référence selon le patient (homme, femme, enfant, nouveau-né) et une observation proposée.</p></div>
+      <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Technique</span><p style="margin:0;font-size:17px;line-height:1.65;color:var(--ink);text-wrap:pretty">Le biologiste coche les examens demandés et la feuille de résultats se compose, avec les valeurs de référence selon le patient (homme, femme, enfant, nouveau-né) et une observation proposée.</p></div>
     </div>
     <figure style="margin:0;display:flex;flex-direction:column;gap:12px">
-      <div style="padding:10px;border-radius:16px;background:#121A21;border:1px solid #2A3741"><img src="img/laboratoire.webp" alt="Écran du laboratoire : examens à cocher et feuille de numération formule sanguine" width="1440" height="900" loading="lazy" style="width:100%;border-radius:8px"></div>
-      <figcaption style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7D8D99">Numération formule sanguine avec valeurs de référence.</figcaption>
+      <div style="padding:10px;border-radius:var(--radius-lg);background:var(--surface-raised);border:1px solid var(--line)"><img src="img/laboratoire.webp" alt="Écran du laboratoire : examens à cocher et feuille de numération formule sanguine" width="1440" height="900" loading="lazy" style="width:100%;border-radius:var(--radius-md)"></div>
+      <figcaption style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);font-weight:600">Numération formule sanguine avec valeurs de référence.</figcaption>
     </figure>
-    <div style="display:flex;flex-wrap:wrap;gap:12px 32px;font-family:'JetBrains Mono',monospace;font-size:14px;color:#6CCBEA"><span>≈ 200 résultats imprimés</span></div>
-    <div style="display:flex;flex-wrap:wrap;gap:8px 28px;border-top:1px solid #2A3741;padding-top:16px;font-size:15px;color:#D3DCE3">
+    <div style="display:flex;flex-wrap:wrap;gap:12px 32px;font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:14px;color:var(--accent);font-weight:600"><span>≈ 200 résultats imprimés</span></div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px 28px;border-top:1px solid var(--line);padding-top:16px;font-size:15px;color:var(--ink)">
       <span>Hématologie</span><span>Biochimie</span><span>Sérologies</span><span>Hormonologie</span><span>Bactériologie</span><span>Parasitologie</span>
     </div>
   </article>
 
   <div style="max-width:1200px;margin:0 auto;padding:96px 24px 0">
-    <div style="border-top:2px solid #6CCBEA;padding-top:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px 56px;align-items:end">
-      <h2 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(34px,4.4vw,52px);line-height:1.05">En préparation</h2>
-      <p style="margin:0;font-size:16px;line-height:1.6;color:#B4C0CA">Trois outils en cours de développement. Les cliniques intéressées peuvent participer aux premiers essais.</p>
+    <div style="border-top:2px solid var(--accent);padding-top:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px 56px;align-items:end">
+      <h2 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:clamp(28px,3.4vw,40px);line-height:1.05">En préparation</h2>
+      <p style="margin:0;font-size:16px;line-height:1.6;color:var(--ink-muted)">Trois outils en cours de développement. Les cliniques intéressées peuvent participer aux premiers essais.</p>
     </div>
   </div>
 
-  <article data-anim="reveal" id="cr-05" style="max-width:1200px;margin:0 auto;padding:72px 24px;border-top:1px solid #1E2830;display:flex;flex-direction:column;gap:48px">
+  <article data-anim="reveal" id="cr-05" style="max-width:1200px;margin:0 auto;padding:72px 24px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:48px">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:32px 56px;align-items:start">
       <div style="display:flex;flex-direction:column;gap:14px">
-        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;color:#6CCBEA;display:flex;align-items:center;gap:10px"><span style="width:7px;height:7px;border-radius:50%;border:1px solid #97A6B2"></span>CR 05 — EN DÉVELOPPEMENT</span>
-        <h3 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(40px,5vw,60px);line-height:1">Syndromik</h3>
-        <p style="margin:0;font-size:17px;color:#97A6B2">Des signes aux pathologies, hors connexion</p>
+        <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.1em;color:var(--accent);display:flex;align-items:center;gap:10px;font-weight:600"><span style="width:7px;height:7px;border-radius:50%;border:1px solid var(--ink-muted)"></span>CR 05 — EN DÉVELOPPEMENT</span>
+        <h3 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:clamp(28px,3.4vw,40px);line-height:1">Syndromik</h3>
+        <p style="margin:0;font-size:17px;color:var(--ink-muted)">Des signes aux pathologies, hors connexion</p>
       </div>
       <div style="display:flex;flex-direction:column;gap:22px">
-        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#7D8D99">Indication</span><p style="margin:0;font-size:17px;line-height:1.65;color:#D3DCE3;text-wrap:pretty">Relier signes, syndromes, pathologies et spécialités dans les deux sens, pour orienter le raisonnement clinique en contexte ivoirien.</p></div>
-        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#7D8D99">Technique</span><p style="margin:0;font-size:17px;line-height:1.65;color:#D3DCE3;text-wrap:pretty">Le médecin coche les signes présents chez le patient. Les syndromes évoqués sont classés par recoupement, puis chaque syndrome mène à ses pathologies probables.</p></div>
-        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#7D8D99">Conclusion</span><p style="margin:0;font-size:17px;line-height:1.65;color:#D3DCE3;text-wrap:pretty">Application installable, fonctionne sans réseau. Base v0.6 : 59 signes, 30 syndromes, 54 pathologies. Contenu en cours de validation contre les protocoles nationaux.</p></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Indication</span><p style="margin:0;font-size:17px;line-height:1.65;color:var(--ink);text-wrap:pretty">Relier signes, syndromes, pathologies et spécialités dans les deux sens, pour orienter le raisonnement clinique en contexte ivoirien.</p></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Technique</span><p style="margin:0;font-size:17px;line-height:1.65;color:var(--ink);text-wrap:pretty">Le médecin coche les signes présents chez le patient. Les syndromes évoqués sont classés par recoupement, puis chaque syndrome mène à ses pathologies probables.</p></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Conclusion</span><p style="margin:0;font-size:17px;line-height:1.65;color:var(--ink);text-wrap:pretty">Application installable, fonctionne sans réseau. Base v0.6 : 59 signes, 30 syndromes, 54 pathologies. Contenu en cours de validation contre les protocoles nationaux.</p></div>
       </div>
     </div>
     <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:32px">
         <figure style="margin:0;display:flex;flex-direction:column;gap:10px;align-items:center">
-          <div style="padding:5px;border-radius:30px;background:#000;border:1px solid #2A3741;box-shadow:0 30px 60px rgba(0,0,0,0.5)">
+          <div style="padding:5px;border-radius:30px;background:var(--device);border:1px solid var(--line);box-shadow:var(--shadow-lg)">
             <img width="430" height="860" src="img/syndromik-accueil.webp" alt="Syndromik : Accueil" loading="lazy" style="width:234px;border-radius:25px">
           </div>
-          <figcaption style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">Accueil</figcaption>
+          <figcaption style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);font-weight:600">Accueil</figcaption>
         </figure>
         <figure style="margin:0;display:flex;flex-direction:column;gap:10px;align-items:center">
-          <div style="padding:5px;border-radius:30px;background:#000;border:1px solid #2A3741;box-shadow:0 30px 60px rgba(0,0,0,0.5)">
+          <div style="padding:5px;border-radius:30px;background:var(--device);border:1px solid var(--line);box-shadow:var(--shadow-lg)">
             <img width="430" height="860" src="img/syndromik-signes.webp" alt="Syndromik : Combiner des signes" loading="lazy" style="width:234px;border-radius:25px">
           </div>
-          <figcaption style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">Combiner des signes</figcaption>
+          <figcaption style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);font-weight:600">Combiner des signes</figcaption>
         </figure>
         <figure style="margin:0;display:flex;flex-direction:column;gap:10px;align-items:center">
-          <div style="padding:5px;border-radius:30px;background:#000;border:1px solid #2A3741;box-shadow:0 30px 60px rgba(0,0,0,0.5)">
+          <div style="padding:5px;border-radius:30px;background:var(--device);border:1px solid var(--line);box-shadow:var(--shadow-lg)">
             <img width="430" height="860" src="img/syndromik-syndrome.webp" alt="Syndromik : Fiche syndrome" loading="lazy" style="width:234px;border-radius:25px">
           </div>
-          <figcaption style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">Fiche syndrome</figcaption>
+          <figcaption style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);font-weight:600">Fiche syndrome</figcaption>
         </figure>
     </div>
-    <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7D8D99;text-align:center">Captures de l'application réelle.</span>
+    <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);text-align:center;font-weight:600">Captures de l'application réelle.</span>
   </article>
 
-  <article data-anim="reveal" id="cr-06" style="max-width:1200px;margin:0 auto;padding:72px 24px;border-top:1px solid #1E2830;display:flex;flex-direction:column;gap:48px">
+  <article data-anim="reveal" id="cr-06" style="max-width:1200px;margin:0 auto;padding:72px 24px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:48px">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:32px 56px;align-items:start">
       <div style="display:flex;flex-direction:column;gap:14px">
-        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;color:#6CCBEA;display:flex;align-items:center;gap:10px"><span style="width:7px;height:7px;border-radius:50%;border:1px solid #97A6B2"></span>CR 06 — EN DÉVELOPPEMENT</span>
-        <h3 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(40px,5vw,60px);line-height:1">RDVmed</h3>
-        <p style="margin:0;font-size:17px;color:#97A6B2">Suivi des rendez-vous et relance des patients</p>
+        <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.1em;color:var(--accent);display:flex;align-items:center;gap:10px;font-weight:600"><span style="width:7px;height:7px;border-radius:50%;border:1px solid var(--ink-muted)"></span>CR 06 — EN DÉVELOPPEMENT</span>
+        <h3 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:clamp(28px,3.4vw,40px);line-height:1">RDVmed</h3>
+        <p style="margin:0;font-size:17px;color:var(--ink-muted)">Suivi des rendez-vous et relance des patients</p>
       </div>
       <div style="display:flex;flex-direction:column;gap:22px">
-        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#7D8D99">Indication</span><p style="margin:0;font-size:17px;line-height:1.65;color:#D3DCE3;text-wrap:pretty">Ne plus perdre de vue les patients : contrôles, retraits de fils, suites d'hospitalisation et rendez-vous chez le spécialiste.</p></div>
-        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#7D8D99">Technique</span><p style="margin:0;font-size:17px;line-height:1.65;color:#D3DCE3;text-wrap:pretty">La secrétaire enregistre le suivi en quelques secondes. Les retards ressortent en premier, et le patient est relancé par WhatsApp, SMS ou appel avec un message signé du cabinet.</p></div>
-        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#7D8D99">Conclusion</span><p style="margin:0;font-size:17px;line-height:1.65;color:#D3DCE3;text-wrap:pretty">Partage entre les postes du secrétariat, rappels avant le rendez-vous, export CSV. Fonctionne aussi sans réseau.</p></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Indication</span><p style="margin:0;font-size:17px;line-height:1.65;color:var(--ink);text-wrap:pretty">Ne plus perdre de vue les patients : contrôles, retraits de fils, suites d'hospitalisation et rendez-vous chez le spécialiste.</p></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Technique</span><p style="margin:0;font-size:17px;line-height:1.65;color:var(--ink);text-wrap:pretty">La secrétaire enregistre le suivi en quelques secondes. Les retards ressortent en premier, et le patient est relancé par WhatsApp, SMS ou appel avec un message signé du cabinet.</p></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Conclusion</span><p style="margin:0;font-size:17px;line-height:1.65;color:var(--ink);text-wrap:pretty">Partage entre les postes du secrétariat, rappels avant le rendez-vous, export CSV. Fonctionne aussi sans réseau.</p></div>
       </div>
     </div>
     <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:32px">
         <figure style="margin:0;display:flex;flex-direction:column;gap:10px;align-items:center">
-          <div style="padding:5px;border-radius:30px;background:#000;border:1px solid #2A3741;box-shadow:0 30px 60px rgba(0,0,0,0.5)">
+          <div style="padding:5px;border-radius:30px;background:var(--device);border:1px solid var(--line);box-shadow:var(--shadow-lg)">
             <img width="390" height="796" src="img/rdvmed-aujourdhui.webp" alt="RDVmed : Aujourd'hui" loading="lazy" style="width:234px;border-radius:25px">
           </div>
-          <figcaption style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">Aujourd'hui</figcaption>
+          <figcaption style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);font-weight:600">Aujourd'hui</figcaption>
         </figure>
         <figure style="margin:0;display:flex;flex-direction:column;gap:10px;align-items:center">
-          <div style="padding:5px;border-radius:30px;background:#000;border:1px solid #2A3741;box-shadow:0 30px 60px rgba(0,0,0,0.5)">
+          <div style="padding:5px;border-radius:30px;background:var(--device);border:1px solid var(--line);box-shadow:var(--shadow-lg)">
             <img width="390" height="796" src="img/rdvmed-a-venir.webp" alt="RDVmed : À venir" loading="lazy" style="width:234px;border-radius:25px">
           </div>
-          <figcaption style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">À venir</figcaption>
+          <figcaption style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);font-weight:600">À venir</figcaption>
         </figure>
         <figure style="margin:0;display:flex;flex-direction:column;gap:10px;align-items:center">
-          <div style="padding:5px;border-radius:30px;background:#000;border:1px solid #2A3741;box-shadow:0 30px 60px rgba(0,0,0,0.5)">
+          <div style="padding:5px;border-radius:30px;background:var(--device);border:1px solid var(--line);box-shadow:var(--shadow-lg)">
             <img width="390" height="796" src="img/rdvmed-historique.webp" alt="RDVmed : Historique" loading="lazy" style="width:234px;border-radius:25px">
           </div>
-          <figcaption style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7D8D99">Historique</figcaption>
+          <figcaption style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);font-weight:600">Historique</figcaption>
         </figure>
     </div>
-    <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#7D8D99;text-align:center">Captures de l'application, patients fictifs.</span>
+    <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;color:var(--ink-muted);text-align:center;font-weight:600">Captures de l'application, patients fictifs.</span>
   </article>
 
-  <article data-anim="reveal" id="cr-07" style="max-width:1200px;margin:0 auto;padding:72px 24px 104px;border-top:1px solid #1E2830">
+  <article data-anim="reveal" id="cr-07" style="max-width:1200px;margin:0 auto;padding:72px 24px 104px;border-top:1px solid var(--line)">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:32px 56px;align-items:start">
       <div style="display:flex;flex-direction:column;gap:14px">
-        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;color:#6CCBEA;display:flex;align-items:center;gap:10px"><span style="width:7px;height:7px;border-radius:50%;border:1px solid #97A6B2"></span>CR 07 — EN DÉVELOPPEMENT</span>
-        <h3 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(40px,5vw,60px);line-height:1">InECG</h3>
-        <p style="margin:0;font-size:17px;color:#97A6B2">Aide à l'interprétation de l'ECG</p>
+        <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.1em;color:var(--accent);display:flex;align-items:center;gap:10px;font-weight:600"><span style="width:7px;height:7px;border-radius:50%;border:1px solid var(--ink-muted)"></span>CR 07 — EN DÉVELOPPEMENT</span>
+        <h3 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:clamp(28px,3.4vw,40px);line-height:1">InECG</h3>
+        <p style="margin:0;font-size:17px;color:var(--ink-muted)">Aide à l'interprétation de l'ECG</p>
       </div>
       <div style="display:flex;flex-direction:column;gap:22px">
-        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#7D8D99">Indication</span><p style="margin:0;font-size:17px;line-height:1.65;color:#D3DCE3;text-wrap:pretty">Aider le médecin à interpréter un électrocardiogramme à partir d'une simple photo du tracé papier.</p></div>
-        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#7D8D99">Conclusion</span><p style="margin:0;font-size:17px;line-height:1.65;color:#D3DCE3;text-wrap:pretty">Projet en cours de conception.</p></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Indication</span><p style="margin:0;font-size:17px;line-height:1.65;color:var(--ink);text-wrap:pretty">Aider le médecin à interpréter un électrocardiogramme à partir d'une simple photo du tracé papier.</p></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Conclusion</span><p style="margin:0;font-size:17px;line-height:1.65;color:var(--ink);text-wrap:pretty">Projet en cours de conception.</p></div>
       </div>
     </div>
   </article>
 
-  <section id="parcours" style="background:#0E141A;border-top:1px solid #1E2830;border-bottom:1px solid #1E2830">
+  <section id="parcours" style="background:var(--surface-sunken);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
     <div style="max-width:1200px;margin:0 auto;padding:96px 24px;display:flex;flex-direction:column;gap:40px">
       <div style="display:flex;flex-direction:column;gap:12px">
-        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#6CCBEA">Antécédents</span>
-        <h2 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(34px,4.4vw,52px)">Parcours</h2>
+        <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);font-weight:600">Antécédents</span>
+        <h2 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:clamp(28px,3.4vw,40px)">Parcours</h2>
       </div>
       <div data-anim="stagger" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:24px">
-        <div style="display:flex;flex-direction:column;gap:10px;padding-top:18px;border-top:2px solid #6CCBEA"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#6CCBEA">Depuis 2025</span><span style="font-family:'Newsreader',Georgia,serif;font-size:22px;line-height:1.2">Médecin résident, responsable médical et paramédical</span><span style="font-size:14px;line-height:1.5;color:#97A6B2">Groupe Médical La Lumière, San Pedro</span></div>
-        <div style="display:flex;flex-direction:column;gap:10px;padding-top:18px;border-top:2px solid #2A3741"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#97A6B2">2025</span><span style="font-family:'Newsreader',Georgia,serif;font-size:22px;line-height:1.2">Doctorat d'État en médecine</span><span style="font-size:14px;line-height:1.5;color:#97A6B2">Université Félix Houphouët-Boigny, Cocody. Mention très honorable, félicitations du jury</span></div>
-        <div style="display:flex;flex-direction:column;gap:10px;padding-top:18px;border-top:2px solid #2A3741"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#97A6B2">2022 à 2025</span><span style="font-family:'Newsreader',Georgia,serif;font-size:22px;line-height:1.2">Médecin en centres médicaux et à l'hôpital</span><span style="font-size:14px;line-height:1.5;color:#97A6B2">Abidjan : médecin assistant à l'Hôpital général de Koumassi, médecin résident au Centre médical Le Paradis de Padre Pio, vacations à la Clinique médicale Angré et au Centre médical Ivanna Roxane (Songon)</span></div>
+        <div style="display:flex;flex-direction:column;gap:10px;padding-top:18px;border-top:2px solid var(--accent)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:13px;color:var(--accent);font-weight:600">Depuis 2025</span><span style="font-family:var(--font-display);font-size:20px;line-height:1.2;font-weight:600">Médecin résident, responsable médical et paramédical</span><span style="font-size:14px;line-height:1.5;color:var(--ink-muted)">Groupe Médical La Lumière, San Pedro</span></div>
+        <div style="display:flex;flex-direction:column;gap:10px;padding-top:18px;border-top:2px solid var(--line)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:13px;color:var(--ink-muted);font-weight:600">2025</span><span style="font-family:var(--font-display);font-size:20px;line-height:1.2;font-weight:600">Doctorat d'État en médecine</span><span style="font-size:14px;line-height:1.5;color:var(--ink-muted)">Université Félix Houphouët-Boigny, Cocody. Mention très honorable, félicitations du jury</span></div>
+        <div style="display:flex;flex-direction:column;gap:10px;padding-top:18px;border-top:2px solid var(--line)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:13px;color:var(--ink-muted);font-weight:600">2022 à 2025</span><span style="font-family:var(--font-display);font-size:20px;line-height:1.2;font-weight:600">Médecin en centres médicaux et à l'hôpital</span><span style="font-size:14px;line-height:1.5;color:var(--ink-muted)">Abidjan : médecin assistant à l'Hôpital général de Koumassi, médecin résident au Centre médical Le Paradis de Padre Pio, vacations à la Clinique médicale Angré et au Centre médical Ivanna Roxane (Songon)</span></div>
       </div>
       <div data-anim="reveal" style="display:flex;flex-direction:column;gap:8px">
-        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#6CCBEA">Formation continue</span>
-        <ul style="list-style:none;margin:0;padding:0;border-bottom:1px solid #1E2830">
-          <li style="display:grid;grid-template-columns:minmax(0,52px) minmax(0,1fr);gap:4px 20px;padding:16px 0;border-top:1px solid #1E2830"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#97A6B2">2026</span><span style="display:flex;flex-direction:column;gap:4px"><span style="font-size:16px;line-height:1.45;color:#E8EDF1">Politique de financement de la santé pour la couverture santé universelle</span><span style="font-size:14px;line-height:1.5;color:#97A6B2">Formation en ligne de l'Organisation mondiale de la santé, mai 2026. <a href="https://campus.paho.org/who/mod/simplecertificate/verify.php?code=116e9dc5-d481-4e99-8723-2808a33a4da5" target="_blank" rel="noopener" class="hv4" style="color:#97A6B2;text-decoration:underline;text-underline-offset:3px">Certificat vérifiable</a></span></span></li>
-          <li style="display:grid;grid-template-columns:minmax(0,52px) minmax(0,1fr);gap:4px 20px;padding:16px 0;border-top:1px solid #1E2830"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#97A6B2">2025</span><span style="display:flex;flex-direction:column;gap:4px"><span style="font-size:16px;line-height:1.45;color:#E8EDF1">Salon de la sécurité et santé au travail (Salon SST 2025)</span><span style="font-size:14px;line-height:1.5;color:#97A6B2">Participation à la 1<sup style="line-height:0">re</sup> édition, « Défis de la sécurité et santé au travail en Afrique », en ligne, novembre 2025.</span></span></li>
-          <li style="display:grid;grid-template-columns:minmax(0,52px) minmax(0,1fr);gap:4px 20px;padding:16px 0;border-top:1px solid #1E2830"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#97A6B2">2025</span><span style="display:flex;flex-direction:column;gap:4px"><span style="font-size:16px;line-height:1.45;color:#E8EDF1">Fondamentaux du machine learning en santé</span><span style="font-size:14px;line-height:1.5;color:#97A6B2">Cours en ligne <span lang="en">« Fundamentals of Machine Learning for Healthcare »</span>, Stanford Online sur Coursera, janvier 2025. <a href="https://coursera.org/verify/ZZHK886W76B7" target="_blank" rel="noopener" class="hv4" style="color:#97A6B2;text-decoration:underline;text-underline-offset:3px">Certificat vérifiable</a></span></span></li>
-          <li style="display:grid;grid-template-columns:minmax(0,52px) minmax(0,1fr);gap:4px 20px;padding:16px 0;border-top:1px solid #1E2830"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#97A6B2">2025</span><span style="display:flex;flex-direction:column;gap:4px"><span style="font-size:16px;line-height:1.45;color:#E8EDF1">Programmation et données</span><span style="font-size:14px;line-height:1.5;color:#97A6B2">Python, structures de données, Django, programmation orientée objet, data science et IA dans le secteur de la santé, IA générative. Parcours LinkedIn Learning, janvier 2025.</span></span></li>
+        <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);font-weight:600">Formation continue</span>
+        <ul style="list-style:none;margin:0;padding:0;border-bottom:1px solid var(--line)">
+          <li style="display:grid;grid-template-columns:minmax(0,52px) minmax(0,1fr);gap:4px 20px;padding:16px 0;border-top:1px solid var(--line)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:13px;color:var(--ink-muted);font-weight:600">2026</span><span style="display:flex;flex-direction:column;gap:4px"><span style="font-size:16px;line-height:1.45;color:var(--ink)">Politique de financement de la santé pour la couverture santé universelle</span><span style="font-size:14px;line-height:1.5;color:var(--ink-muted)">Formation en ligne de l'Organisation mondiale de la santé, mai 2026. <a href="https://campus.paho.org/who/mod/simplecertificate/verify.php?code=116e9dc5-d481-4e99-8723-2808a33a4da5" target="_blank" rel="noopener" class="hv4" style="color:var(--ink-muted);text-decoration:underline;text-underline-offset:3px">Certificat vérifiable</a></span></span></li>
+          <li style="display:grid;grid-template-columns:minmax(0,52px) minmax(0,1fr);gap:4px 20px;padding:16px 0;border-top:1px solid var(--line)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:13px;color:var(--ink-muted);font-weight:600">2025</span><span style="display:flex;flex-direction:column;gap:4px"><span style="font-size:16px;line-height:1.45;color:var(--ink)">Salon de la sécurité et santé au travail (Salon SST 2025)</span><span style="font-size:14px;line-height:1.5;color:var(--ink-muted)">Participation à la 1<sup style="line-height:0">re</sup> édition, « Défis de la sécurité et santé au travail en Afrique », en ligne, novembre 2025.</span></span></li>
+          <li style="display:grid;grid-template-columns:minmax(0,52px) minmax(0,1fr);gap:4px 20px;padding:16px 0;border-top:1px solid var(--line)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:13px;color:var(--ink-muted);font-weight:600">2025</span><span style="display:flex;flex-direction:column;gap:4px"><span style="font-size:16px;line-height:1.45;color:var(--ink)">Fondamentaux du machine learning en santé</span><span style="font-size:14px;line-height:1.5;color:var(--ink-muted)">Cours en ligne <span lang="en">« Fundamentals of Machine Learning for Healthcare »</span>, Stanford Online sur Coursera, janvier 2025. <a href="https://coursera.org/verify/ZZHK886W76B7" target="_blank" rel="noopener" class="hv4" style="color:var(--ink-muted);text-decoration:underline;text-underline-offset:3px">Certificat vérifiable</a></span></span></li>
+          <li style="display:grid;grid-template-columns:minmax(0,52px) minmax(0,1fr);gap:4px 20px;padding:16px 0;border-top:1px solid var(--line)"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:13px;color:var(--ink-muted);font-weight:600">2025</span><span style="display:flex;flex-direction:column;gap:4px"><span style="font-size:16px;line-height:1.45;color:var(--ink)">Programmation et données</span><span style="font-size:14px;line-height:1.5;color:var(--ink-muted)">Python, structures de données, Django, programmation orientée objet, data science et IA dans le secteur de la santé, IA générative. Parcours LinkedIn Learning, janvier 2025.</span></span></li>
         </ul>
       </div>
     </div>
@@ -407,18 +456,18 @@ a:hover{color:#A6E1F4}
   <footer id="contact" style="max-width:1200px;margin:0 auto;padding:96px 24px 32px;display:flex;flex-direction:column;gap:56px">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:40px 64px;align-items:start">
       <div style="display:flex;flex-direction:column;gap:16px">
-        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#6CCBEA">Contact</span>
-        <h2 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(34px,4.4vw,52px);line-height:1.05">Demandez une démonstration.</h2>
-        <p style="margin:0;font-size:17px;line-height:1.6;color:#B4C0CA;max-width:440px">Clinique, cabinet, laboratoire ou confrère : écrivez-moi, je vous réponds rapidement.</p>
-        <a href="https://wa.me/2250767087494?text=Bonjour%20Docteur%2C%20je%20souhaite%20une%20d%C3%A9monstration%20de%20vos%20outils." target="_blank" rel="noopener" style="align-self:flex-start;margin-top:8px;padding:16px 26px;border-radius:999px;background:#6CCBEA;color:#05131A;font-weight:600;font-size:16px;text-decoration:none" class="hv2">Écrire sur WhatsApp</a>
+        <span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);font-weight:600">Contact</span>
+        <h2 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:clamp(28px,3.4vw,40px);line-height:1.05">Demandez une démonstration.</h2>
+        <p style="margin:0;font-size:17px;line-height:1.6;color:var(--ink-muted);max-width:440px">Clinique, cabinet, laboratoire ou confrère : écrivez-moi, je vous réponds rapidement.</p>
+        <a href="https://wa.me/2250767087494?text=Bonjour%20Docteur%2C%20je%20souhaite%20une%20d%C3%A9monstration%20de%20vos%20outils." target="_blank" rel="noopener" style="align-self:flex-start;margin-top:8px;padding:16px 26px;border-radius:var(--radius-md);background:var(--accent);color:var(--on-accent);font-weight:600;font-size:16px;text-decoration:none;display:inline-flex;align-items:center;min-height:var(--control-md)" class="hv2">Écrire sur WhatsApp</a>
       </div>
-      <div style="display:flex;flex-direction:column;border-top:1px solid #2A3741">
-        <a href="tel:+2250767087494" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:20px 0;border-bottom:1px solid #2A3741;text-decoration:none;color:#E8EDF1" class="hv4"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#7D8D99">Tél. / WhatsApp</span><span style="font-size:18px">+225 07 67 08 74 94</span></a>
-        <a href="mailto:baletromaricadolphe@gmail.com" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:20px 0;border-bottom:1px solid #2A3741;text-decoration:none;color:#E8EDF1" class="hv4"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#7D8D99">E-mail</span><span style="font-size:18px;overflow-wrap:anywhere">baletromaricadolphe@gmail.com</span></a>
-        <a href="https://github.com/Oden225" target="_blank" rel="noopener" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:20px 0;border-bottom:1px solid #2A3741;text-decoration:none;color:#E8EDF1" class="hv4"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#7D8D99">GitHub</span><span style="font-size:18px">github.com/Oden225</span></a>
+      <div style="display:flex;flex-direction:column;border-top:1px solid var(--line)">
+        <a href="tel:+2250767087494" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:20px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)" class="hv4"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">Tél. / WhatsApp</span><span style="font-size:18px">+225 07 67 08 74 94</span></a>
+        <a href="mailto:baletromaricadolphe@gmail.com" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:20px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)" class="hv4"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">E-mail</span><span style="font-size:18px;overflow-wrap:anywhere">baletromaricadolphe@gmail.com</span></a>
+        <a href="https://github.com/Oden225" target="_blank" rel="noopener" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:20px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)" class="hv4"><span style="font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-muted);font-weight:600">GitHub</span><span style="font-size:18px">github.com/Oden225</span></a>
       </div>
     </div>
-    <div style="border-top:1px solid #1E2830;padding-top:20px;font-size:13px;color:#7D8D99">© 2026 Dr Balet Dégri Romaric Adolphe · San Pedro, Côte d'Ivoire</div>
+    <div style="border-top:1px solid var(--line);padding-top:20px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px 24px;font-size:14px;color:var(--ink-muted)"><span>© 2026 Dr Balet Dégri Romaric Adolphe · San Pedro, Côte d'Ivoire</span><span style="display:inline-flex;align-items:center;gap:10px">Un projet <svg class="od-logo" viewBox="0 0 1041.17 178.2" role="img" aria-label="Odenlabs" style="height:22px;width:auto;display:block"><g transform="translate(-20.9 -27.5)"><path class="od-logo-ring" d="M157.22 41.04 A89.1 89.1 0 1 1 62.78 41.04 L77.94 65.29 A60.5 60.5 0 1 0 142.06 65.29 Z M135.34 53.17 A14.3 14.3 0 1 1 163.94 53.17 A14.3 14.3 0 1 1 135.34 53.17 Z M56.06 53.17 A14.3 14.3 0 1 1 84.66 53.17 A14.3 14.3 0 1 1 56.06 53.17 Z"/><circle class="od-logo-dot" cx="110" cy="116.6" r="23.1"/><path class="od-logo-oden" d="M295.3790697674419 174.55348837209306C327.84418604651165 174.55348837209306 347.5651162790698 152.97209302325584 347.5651162790698 120.97209302325584C347.5651162790698 88.87906976744189 327.84418604651165 67.29767441860467 295.3790697674419 67.29767441860467C262.82093023255817 67.29767441860467 243.10000000000002 88.87906976744189 243.10000000000002 120.97209302325584C243.10000000000002 152.97209302325584 262.82093023255817 174.55348837209306 295.3790697674419 174.55348837209306ZM295.3790697674419 149.71627906976747C282.9139534883721 149.71627906976747 276.21627906976744 138.08837209302328 276.21627906976744 120.78604651162793C276.21627906976744 103.39069767441863 282.9139534883721 92.13488372093026 295.3790697674419 92.13488372093026C307.84418604651165 92.13488372093026 314.5418604651163 103.39069767441863 314.5418604651163 120.78604651162793C314.5418604651163 138.08837209302328 307.84418604651165 149.71627906976747 295.3790697674419 149.71627906976747ZM397.0125581395349 174.08837209302328C412.826511627907 174.08837209302328 422.12883720930233 165.15813953488373 426.22186046511627 155.76279069767443H427.33813953488374V172.60000000000002H459.33813953488374V33.99534883720932H426.9660465116279V86.4604651162791H426.22186046511627C422.31488372093025 77.0651162790698 413.3846511627907 67.29767441860467 396.733488372093 67.29767441860467C374.87302325581396 67.29767441860467 355.33813953488374 84.22790697674421 355.33813953488374 120.69302325581398C355.33813953488374 155.94883720930235 373.8497674418605 174.08837209302328 397.0125581395349 174.08837209302328ZM408.08232558139537 148.78604651162794C395.52418604651166 148.78604651162794 388.733488372093 137.6232558139535 388.733488372093 120.69302325581398C388.733488372093 103.76279069767445 395.52418604651166 92.69302325581398 408.08232558139537 92.69302325581398C420.45441860465115 92.69302325581398 427.7102325581395 103.48372093023258 427.7102325581395 120.69302325581398C427.7102325581395 137.71627906976747 420.3613953488372 148.78604651162794 408.08232558139537 148.78604651162794ZM523.5762790697675 174.55348837209306C548.7855813953488 174.55348837209306 565.8088372093023 163.11162790697676 571.0181395348837 145.0651162790698L542.0879069767442 140.32093023255817C539.4832558139535 147.2976744186047 532.8786046511627 151.0186046511628 524.1344186046512 151.0186046511628C511.8553488372093 151.0186046511628 503.57627906976745 143.57674418604654 503.0181395348837 128.50697674418606H572.506511627907V120.32093023255817C572.506511627907 85.99534883720932 551.5762790697675 67.29767441860467 522.366976744186 67.29767441860467C491.1111627906977 67.29767441860467 471.1111627906977 88.87906976744189 471.1111627906977 120.97209302325584C471.1111627906977 154.27441860465117 490.92511627906975 174.55348837209306 523.5762790697675 174.55348837209306ZM503.2041860465116 109.6232558139535C504.413488372093 98.18139534883723 511.2041860465116 90.83255813953491 522.6460465116279 90.83255813953491C533.9948837209303 90.83255813953491 540.4134883720931 97.80930232558141 541.7158139534884 109.6232558139535ZM616.2795348837209 113.25116279069769C616.2795348837209 101.15813953488374 623.4423255813954 93.99534883720932 634.046976744186 93.99534883720932C644.6516279069767 93.99534883720932 650.9772093023256 100.97209302325584 650.9772093023256 112.69302325581398V172.60000000000002H683.4423255813954V106.36744186046514C683.4423255813954 82.83255813953491 669.2097674418604 67.29767441860467 647.4423255813954 67.29767441860467C630.6051162790698 67.29767441860467 620.3725581395349 76.60000000000002 614.8841860465116 91.01860465116282L614.3260465116279 68.60000000000002H583.8144186046511V172.60000000000002H616.2795348837209Z"/><path class="od-logo-labs" d="M731.5874418604651 33.99534883720932H699.1223255813953V172.60000000000002H731.5874418604651ZM776.4767441860465 174.4604651162791C790.8953488372092 174.4604651162791 800.9418604651162 168.69302325581398 806.6162790697674 157.99534883720932H807.453488372093V172.60000000000002H837.9651162790698V101.99534883720932C837.9651162790698 79.66976744186049 817.5930232558139 67.29767441860467 791.7325581395348 67.29767441860467C765.6860465116279 67.29767441860467 749.313953488372 79.48372093023258 745.2209302325581 97.25116279069769L774.6162790697674 101.0651162790698C776.3837209302325 94.55348837209304 782.4302325581396 90.36744186046514 791.453488372093 90.36744186046514C800.2906976744185 90.36744186046514 805.5930232558139 94.4604651162791 805.5930232558139 101.6232558139535V101.99534883720932C805.5930232558139 108.41395348837212 798.5232558139535 109.71627906976747 780.9418604651163 111.20465116279073C759.9186046511627 112.97209302325584 742.2441860465116 120.69302325581398 742.2441860465116 143.76279069767443C742.2441860465116 164.32093023255817 756.4767441860465 174.4604651162791 776.4767441860465 174.4604651162791ZM786.3372093023255 152.97209302325584C778.5232558139535 152.97209302325584 772.9418604651163 149.2511627906977 772.9418604651163 142.27441860465117C772.9418604651163 135.39069767441862 778.3372093023255 131.2976744186047 787.9186046511627 129.90232558139536C793.9651162790698 128.97209302325584 802.1511627906976 127.57674418604654 805.8720930232557 125.6232558139535V135.57674418604654C805.8720930232557 145.80930232558143 797.2209302325581 152.97209302325584 786.3372093023255 152.97209302325584ZM916.1567441860464 174.08837209302328C939.2265116279068 174.08837209302328 957.8311627906976 155.94883720930235 957.8311627906976 120.69302325581398C957.8311627906976 84.22790697674421 938.2032558139533 67.29767441860467 916.3427906976743 67.29767441860467C899.7846511627906 67.29767441860467 890.8544186046511 77.0651162790698 886.947441860465 86.4604651162791H886.2032558139533V33.99534883720932H853.7381395348835V172.60000000000002H885.8311627906976V155.76279069767443H886.947441860465C891.0404651162789 165.15813953488373 900.2497674418603 174.08837209302328 916.1567441860464 174.08837209302328ZM905.0869767441859 148.78604651162794C892.7148837209301 148.78604651162794 885.4590697674417 137.71627906976747 885.4590697674417 120.69302325581398C885.4590697674417 103.48372093023258 892.7148837209301 92.69302325581398 905.0869767441859 92.69302325581398C917.6451162790696 92.69302325581398 924.4358139534883 103.76279069767445 924.4358139534883 120.69302325581398C924.4358139534883 137.6232558139535 917.5520930232557 148.78604651162794 905.0869767441859 148.78604651162794ZM1013.3251162790697 174.55348837209306C1041.6972093023255 174.55348837209306 1062.0693023255812 160.78604651162794 1062.0693023255812 139.39069767441862C1062.0693023255812 124.32093023255817 1052.1158139534882 115.20465116279073 1031.4646511627907 111.29767441860467L1011.5576744186046 107.57674418604654C1002.6274418604651 105.80930232558141 999.8367441860464 102.55348837209304 999.8367441860464 98.36744186046514C999.8367441860464 93.0651162790698 1005.9762790697673 89.6232558139535 1013.7902325581395 89.6232558139535C1022.534418604651 89.6232558139535 1028.4879069767442 93.71627906976747 1030.4413953488372 100.69302325581398L1059.0925581395347 96.13488372093026C1055.4646511627907 78.27441860465119 1039.2786046511626 67.29767441860467 1013.2320930232557 67.29767441860467C985.3251162790697 67.29767441860467 967.4646511627906 79.57674418604654 967.4646511627906 100.32093023255817C967.4646511627906 116.22790697674421 977.6972093023255 126.36744186046514 998.2553488372092 130.2744186046512L1016.3948837209301 133.80930232558143C1025.0460465116278 135.57674418604654 1029.1390697674417 138.2744186046512 1029.1390697674417 143.11162790697676C1029.1390697674417 148.4139534883721 1023.6506976744186 151.76279069767443 1014.534418604651 151.76279069767443C1003.4646511627906 151.76279069767443 997.6041860465116 147.11162790697676 994.9995348837208 138.08837209302328L964.8599999999999 142.8325581395349C968.4879069767441 162.73953488372095 986.720465116279 174.55348837209306 1013.3251162790697 174.55348837209306Z"/></g></svg></span></div>
   </footer>
 
 </div>
