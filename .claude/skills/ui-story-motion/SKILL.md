@@ -80,6 +80,8 @@ createUIStory(document.getElementById('story'), chapters, { hold: 1000 });
 
 Adapter l'identité en changeant les variables (`--us-bg`, `--us-stage-a`, `--us-accent`, `--us-accent-ink`, `--us-glow`, `--us-card`, polices). Ne pas toucher aux durées dans le CSS : elles sont dans le JS.
 
+Pour un système de design existant : poser les jetons de la page sur l'élément racine (panneau d'infos) et la palette de la scène sur `.us-stage`, qui les redéfinit pour elle seule. Réglages fins : `--us-fill` et `--us-hl` (barre et anneau de surlignage, posés sur des cartes blanches : prendre l'accent prévu pour fond clair), `--us-hl-soft`, `--us-chip`, `--us-accent-hover`, `--us-radius` (boutons), `--us-stage-radius`, `--us-display-weight` (graisse des titres).
+
 Ce que le moteur garantit déjà (à préserver si on le modifie) :
 - lecture **seulement quand la scène est visible** (seuil 35 %), arrêt sinon ;
 - `prefers-reduced-motion` : image fixe à plat, navigation manuelle, bouton pause masqué ;
